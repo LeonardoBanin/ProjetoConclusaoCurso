@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.logo-container {
+    cursor: pointer;
+}
+
+.logo-container img {
+    max-width: 350px;
+    height: auto;
+}

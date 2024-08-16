@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Flex Food</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula ao arquivo CSS externo -->
+</head>
+<body>
+
+    <div class="login-container">
+        <a href="pagina-de-destino.html">
+            <img src="img/logo.png" alt="Flex Food Logo">
+        </a>
+        <h1>FlexFood</h1>
+        <form action="pagina-de-destino.html" method="get"> <!-- Redireciona para a página desejada -->
+            <input type="text" placeholder="Número da Matrícula" required>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Senha" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <p style="color: red;">Esqueceu sua senha?</p>
+            <p>Entre em contato com a secretária da sua escola</p>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const type = passwordField.type === 'password' ? 'text' : 'password';
+            passwordField.type = type;
+        }
+    </script>
+
+</body>
+</html>
