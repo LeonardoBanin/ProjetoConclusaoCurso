@@ -9,7 +9,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Tarefa 1: desenvolver a identidade visual da empresa
 - [x] Tarefa 2: realizar o levantamento de requisitos do projeto
-- [ ] Tarefa 3: desenvolvimento das páginas do sistema
+- [x] Tarefa 3: desenvolvimento das páginas do sistema
 - [ ] Tarefa 4: linkar o projeto com o backend e serviços externos
 - [ ] Tarefa 5: finalizar o sistema e realizar testes finais
 # 💻 Pré-requisitos
