@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    padding-top: 60px; /* Aumenta o espaço no topo para mover o conteúdo mais para baixo */
+}
+
+.logo-container {
+    cursor: pointer;
+    margin-bottom: 10px; /* Reduz o espaço abaixo da logo */
+}
+
+.logo-container img {
+    max-width: 300px; /* Diminui o tamanho máximo da logo */
+    height: auto;
+}
+
+.payment-approved {
+    margin-top: 15px; /* Ajusta o espaço acima do texto 'Pagamento Aprovado!' */
+    font-size: 32px; /* Tamanho do texto 'Pagamento Aprovado!' */
+    color: #000000; /* Cor do texto 'Pagamento Aprovado!' */
+    font-weight: bold; /* Negrito para destacar o texto */
+    font-family: 'Baloo 2', cursive; /* Aplica a fonte 'Baloo 2' */
+}
+
+.payment-approved p:nth-of-type(2) {
+    color: #EF7216; /* Cor do texto 'Agora é só você colocar o código abaixo em nosso token, volte sempre!' */
+    font-size: 20px; /* Tamanho do texto para a parte dividida */
+    margin: 2px 0; /* Reduz o espaço acima e abaixo deste texto para aproximar dos outros elementos */
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte 'Roboto' */
+}
+
+.code {
+    margin-top: 20px; /* Espaço acima do código */
+    font-size: 24px; /* Tamanho do texto do código */
+    color: #000000; /* Cor do código */
+    font-weight: bold; /* Negrito para o texto do código */
+    font-family: 'Bakbak One', sans-serif; /* Aplica a fonte 'Bakbak One' */
+}
+
+.button-container {
+    margin-top: 8px; /* Reduz o espaço acima do botão */
+}
+
+button {
+    padding: 12px 25px; /* Ajusta o padding do botão */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    color: #FFFFFF;
+    background-color: #C20324; /* Cor do botão */
+    border: none;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-weight: bold; /* Negrito para o texto do botão */
+    transition: background-color 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Aplica a fonte 'Roboto' */
+}
+
+button:hover {
+    background-color: #C20324; /* Cor do botão ao passar o mouse */
+}

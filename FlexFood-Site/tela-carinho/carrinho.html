@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFlood</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>FlexFlood</h1>
+    </header>
+    
+    <main>
+        <h2>Cardápio</h2>
+        <div class="menu">
+            <div class="item">
+                <h3>Salgado</h3>
+                <p>Preço: R$5,00</p>
+                <button onclick="addToCart('Salgado', 5.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="item">
+                <h3>Suco</h3>
+                <p>Preço: R$3,00</p>
+                <button onclick="addToCart('Suco', 3.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="item">
+                <h3>Chocolate</h3>
+                <p>Preço: R$2,50</p>
+                <button onclick="addToCart('Chocolate', 2.50)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <h2>Carrinho</h2>
+        <div id="cart">
+            <p id="empty-cart-message">O carrinho está vazio.</p>
+        </div>
+
+        <div id="total-section">
+            <p>Total: R$ <span id="total-value">0.00</span></p>
+            <button id="confirm-button">Confirmar Pedido</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 FlexFlood</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

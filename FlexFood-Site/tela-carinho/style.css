@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#cart {
+    background-color: white;
+    padding: 20px; /* Aumentado o padding para garantir espaço suficiente */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-height: 100px; /* Garantir altura mínima */
+    position: relative; /* Para posicionar a mensagem corretamente */
+}
+
+#empty-cart-message {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    visibility: hidden; /* Inicialmente oculto */
+}
+
+#total-section {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#confirm-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm-button:hover {
+    background-color: darkred;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.cart-item button:hover {
+    color: #d32f2f;
+}

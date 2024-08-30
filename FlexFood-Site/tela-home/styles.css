@@ -1,0 +1,68 @@
+/* Fundo Preto */
+.black-background {
+    background-color: #000;
+    height: 450px;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: #343a40;
+}
+
+.bg-gray {
+    background-color: #6c757d;
+}
+
+.text-dark {
+    color: #212529;
+}
+
+/* Estilo da Barra de Pesquisa */
+.search-bar {
+    background-color: #343a40;
+}
+
+.input-group-text {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+/* Estilo do Carrossel de Produtos */
+.carousel-inner img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Estilo dos Botões de Filtro */
+.product-filters .btn {
+    border-radius: 20px;
+}
+
+/* Estilo das Cartas de Produtos */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Estilo do Rodapé */
+footer {
+    background-color: #343a40;
+}
+
+footer .list-unstyled li {
+    margin: 5px 0;
+}
+
+footer .text-white {
+    color: #fff;
+}
+.caixa{
+    color: rgb(255, 255, 255);
+    background-color: #343a40;
+}
+

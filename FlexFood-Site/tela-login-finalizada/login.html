@@ -20,7 +20,7 @@
                 <span class="toggle-password" onclick="togglePassword()">👁️</span>
             </div>
             <p style="color: red;">Esqueceu sua senha?</p>
-            <p>Entre em contato com a secretária da sua escola</p>
+            <p>Entre em contato com a secretária da sua escola.</p>
             <button type="submit">Entrar</button>
         </form>
     </div>
@@ -29,7 +29,8 @@
         function togglePassword() {
             const passwordField = document.getElementById('password');
             const type = passwordField.type === 'password' ? 'text' : 'password';
-            passwordField.type = type;
+            passwordField.type = type; 
+
         }
     </script>
 
