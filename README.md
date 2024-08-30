@@ -41,6 +41,8 @@ npm start
 
 # Tecnologias Utilizadas 👨‍💻
 
+-## Tecnologias Utilizadas
+
 - **HTML**  
   ![HTML](https://cdn-icons-png.flaticon.com/512/732/732212.png)
 
@@ -57,7 +59,8 @@ npm start
   ![Canva](https://cdn-icons-png.flaticon.com/512/5968/5968509.png)
 
 - **Word**  
-  ![Word](https://cdn-icons-png.flaticon.com/512/732/732229.png)
+  ![Word](https://cdn-icons-png.flaticon.com/512/888/888870.png)
+
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
