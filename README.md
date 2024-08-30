@@ -1,7 +1,7 @@
 # **Flex Food**
 
 
-<img src="https://www.handtalk.me/br/wp-content/uploads/sites/8/2018/11/capa-blog-2.png" width="600px;" alt="Flex Food">
+<img src="" width="600px;" alt="Flex Food">
 Flex Food é um sistema de cantina online, desenvolvido para facilitar a compra de lanches em escolas e universidades, permitindo pedidos antecipados via aplicativo e retirada sem filas. O projeto tem como objetivo aumentar a eficiência e a satisfação dos usuários.
 
 Ajustes e melhorias
