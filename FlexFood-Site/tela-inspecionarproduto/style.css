@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #fff;
+}
+
+.top-bar {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.cart-quantity {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.product-details {
+    text-align: left;
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.category-label {
+    background-color: gray;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.product-volume {
+    font-size: 18px;
+    color: #ccc;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 48px;
+    color: orange;
+    margin: 20px 0;
+}
+
+.product-image {
+    text-align: center;
+    position: relative; /* Adicionado para controlar a posição da imagem */
+}
+
+.product-image img {
+    width: 200px;
+    margin-top: -100px;
+    position: relative; /* Permite o ajuste da posição sem impactar o layout */
+    top: -40px; /* Ajuste o valor para subir a imagem sem mexer no layout de fundo */
+}
+
+
+.add-to-cart-button {
+    display: block;
+    background-color: #c0172e;
+    color: #fff;
+    border: none;
+    padding: 12px 25px; /* Diminuído para ajustar o tamanho do botão */
+    font-size: 16px; /* Diminuído para um tamanho um pouco menor */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto 0;
+}
+
+.add-to-cart-button:hover {
+    background-color: #a00;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-links div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-links p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: orange;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.social-media ul li {
+    list-style: none;
+}
+
+.social-media ul li img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer p a {
+    color: #ccc;
+}
+
+.footer p a:hover {
+    color: orange;
+}
+
+.footer div:last-child {
+    text-align: center;
+    margin-top: 20px;
+    color: #ccc;
+}
