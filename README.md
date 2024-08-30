@@ -1,11 +1,7 @@
 # **Flex Food**
 
-
-<<<<<<< HEAD
-<img src="" width="600px;" alt="Flex Food">
-=======
 <img src="img/LogoFundo.jpeg" width="600px;" alt="Flex Food">
->>>>>>> 5f67074df1885bbff4b79ea98d39fe747dcfa72e
+
 Flex Food é um sistema de cantina online, desenvolvido para facilitar a compra de lanches em escolas e universidades, permitindo pedidos antecipados via aplicativo e retirada sem filas. O projeto tem como objetivo aumentar a eficiência e a satisfação dos usuários.
 
 Ajustes e melhorias
