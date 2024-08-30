@@ -25,9 +25,6 @@ Para instalar o Flex Food, siga estas etapas:
 
 Linux e macOS:
 
-<comando_de_instalação>
-
-bash
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
 cd flex-food
@@ -36,9 +33,6 @@ npm start
 
 Windows:
 
-<comando_de_instalação>
-
-bash
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
 cd flex-food
