@@ -60,8 +60,7 @@ npm start
 
 - **Word**  
 
-  ![Word]
-  <img src="img/Word.png" width="100px;" alt="Word">
+  <img src="img/Word.png" width="400px;" alt="Word">
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
