@@ -41,6 +41,8 @@ npm start
 
 # Tecnologias Utilizadas 👨‍💻
 
+-## Tecnologias Utilizadas
+
 - **HTML**  
   ![HTML](https://cdn-icons-png.flaticon.com/512/732/732212.png)
 
@@ -51,13 +53,14 @@ npm start
   ![JavaScript](https://cdn-icons-png.flaticon.com/512/5968/5968292.png)
 
 - **AppGyver**  
-  ![AppGyver]([https://www.softr.io/_next/image?url=%2Fimages%2Fno-code%2Fappgyver.png&w=1920&q=75](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJnepm-tr5AYZmpbwVNnRHWPFv2ggZMuELw&s))
+  ![AppGyver](https://www.softr.io/_next/image?url=%2Fimages%2Fno-code%2Fappgyver.png&w=1920&q=75)
 
 - **Canva**  
-  ![Canva][(https://cdn-icons-png.flaticon.com/512/5968/5968509.png](https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ)
+  ![Canva](https://cdn-icons-png.flaticon.com/512/5968/5968509.png)
 
 - **Word**  
-  ![Word](https://cdn-icons-png.flaticon.com/512/732/732229.png)
+  ![Word](https://cdn-icons-png.flaticon.com/512/888/888870.png)
+
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
