@@ -59,11 +59,8 @@ npm start
   ![Canva](img/App%20Canva.png)
 
 - **Word**  
-<<<<<<< HEAD
+
   ![Word](img/Word.png)
-=======
- 
->>>>>>> 87849bd5d59b23a3587871310cf2897ff1965256
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
