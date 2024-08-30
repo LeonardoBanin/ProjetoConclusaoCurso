@@ -53,14 +53,14 @@ npm start
   ![JavaScript](https://cdn-icons-png.flaticon.com/512/5968/5968292.png)
 
 - **AppGyver**  
-  ![AppGyver](https://www.softr.io/_next/image?url=%2Fimages%2Fno-code%2Fappgyver.png&w=1920&q=75)
+  ![AppGyver](img/App%20giver.png)
 
 - **Canva**  
-  ![Canva](https://cdn-icons-png.flaticon.com/512/5968/5968509.png)
+  ![Canva](img/App%20Canva.png)
 
 - **Word**  
-  ![Word](https://cdn-icons-png.flaticon.com/512/888/888870.png)
 
+  <img src="img/Word.png" width="400px;" alt="Word">
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
