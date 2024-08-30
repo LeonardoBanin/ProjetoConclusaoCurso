@@ -13,7 +13,8 @@ body {
 }
 
 .logo-container {
-    cursor: pointer;
+    pointer-events: none; /* Desativa a funcionalidade de clique */
+    cursor: default; /* Remove o cursor pointer */
     margin-bottom: 10px; /* Reduz o espaço abaixo da logo */
 }
 
