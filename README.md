@@ -1,7 +1,7 @@
 # **Flex Food**
 
 
-<img src="https://www.handtalk.me/br/wp-content/uploads/sites/8/2018/11/capa-blog-2.png" width="600px;" alt="Flex Food">
+<img src="blob:https://web.whatsapp.com/70e1ed5a-e449-4155-a784-d42ec6f1f5a5" width="600px;" alt="Flex Food">
 Flex Food é um sistema de cantina online, desenvolvido para facilitar a compra de lanches em escolas e universidades, permitindo pedidos antecipados via aplicativo e retirada sem filas. O projeto tem como objetivo aumentar a eficiência e a satisfação dos usuários.
 
 Ajustes e melhorias
@@ -12,24 +12,31 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Tarefa 3: desenvolvimento das páginas do sistema
 - [ ] Tarefa 4: linkar o projeto com o backend e serviços externos
 - [ ] Tarefa 5: finalizar o sistema e realizar testes finais
+
 # 💻 Pré-requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Você instalou a versão mais recente de Node.js e React.js
 Você possui uma máquina com um dos seguintes sistemas operacionais: <Windows / Linux / macOS>
 Você leu a documentação oficial do React.js e Node.js para entender a estrutura do projeto.
+
 🚀 Instalando Flex Food
 Para instalar o Flex Food, siga estas etapas:
 
 Linux e macOS:
 
+<comando_de_instalação>
+
 bash
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
 cd flex-food
 npm install
 npm start
+
 Windows:
+
+<comando_de_instalação>
 
 bash
 Copiar código
@@ -37,30 +44,6 @@ git clone https://github.com/seu-repositorio/flex-food.git
 cd flex-food
 npm install
 npm start
-
-## 🚀 Instalando <nome_do_projeto>
-
-Para instalar o <nome_do_projeto>, siga estas etapas:
-
-Linux e macOS:
-```
-<comando_de_instalação>
-```
-
-Windows:
-```
-<comando_de_instalação>
-```
-
-## ☕ Usando <nome_do_projeto>
-
-Para usar <nome_do_projeto>, siga estas etapas:
-
-```
-<exemplo_de_uso>
-```
-
-
 
 
 # 🤝 Time SCRUM
