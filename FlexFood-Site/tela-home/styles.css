@@ -72,6 +72,18 @@ h4{
     margin-top: 20px;
     
 }
-.form-control{
-    color: ;
-}
+    /* Estilos de Hover para os Botões de Filtro de Produtos */
+    .product-filters .btn:hover {
+        background-color: #4B2995 !important; /* Cor de fundo no hover */
+        color: #ffffff !important; /* Cor do texto no hover */
+        border-color: #4B2995 !important; /* Cor da borda no hover */
+    }
+
+    /* Estilos de Ativo (Clique) para os Botões de Filtro de Produtos */
+    .product-filters .btn:active,
+    .product-filters .btn:focus {
+        background-color: #3A1F74 !important; /* Cor de fundo ao clicar */
+        color: #ffffff !important; /* Cor do texto ao clicar */
+        border-color: #3A1F74 !important; /* Cor da borda ao clicar */
+        box-shadow: inset !important; /* Remove a sombra padrão do Bootstrap */
+    }
