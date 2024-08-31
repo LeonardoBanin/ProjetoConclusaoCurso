@@ -38,6 +38,25 @@ header {
     border-radius: 20px;
 }
 
+.btn-filter {
+    color: #53398a; /* Texto roxo */
+    background-color: #fff; /* Fundo branco */
+    border-color: #4B2995; /* Borda roxa */
+}
+
+.btn-filter:hover {
+    color: #fff; /* Texto branco no hover */
+    background-color: #4B2995; /* Fundo roxo no hover */
+    border-color: #4B2995; /* Borda roxa no hover */
+}
+
+.btn-filter:focus, .btn-filter:active {
+    color: #fff; /* Texto branco ao focar ou clicar */
+    background-color: #ffffff; /* Fundo roxo ao focar ou clicar */
+    border-color: #513f79; /* Borda roxa ao focar ou clicar */
+    box-shadow: none; /* Remove sombra padrão */
+}
+
 /* Estilo das Cartas de Produtos */
 .card {
     border-radius: 10px;
@@ -51,39 +70,25 @@ header {
 
 /* Estilo do Rodapé */
 footer {
-    background-color: #171819;
+    background-color: #171819; /* Cor de fundo preta */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    position: relative; /* Posiciona o rodapé relativo ao seu contêiner */
+    bottom: 0; /* Garante que o rodapé fique na parte inferior da página */
 }
 
-footer .list-unstyled li {
-    margin: 5px 0;
+footer .container {
+    padding: 0 15px; /* Ajuste o padding conforme necessário */
 }
 
-footer .text-white {
-    color: #fff;
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
 }
-.caixa{
-    color: rgb(255, 255, 255);
-    background-color: #171414;
-}
-h4{
-    color: #fff;
-    background-color: #000000;
-    margin: -0px;
-    margin-top: 20px;
-    
-}
-    /* Estilos de Hover para os Botões de Filtro de Produtos */
-    .product-filters .btn:hover {
-        background-color: #4B2995 !important; /* Cor de fundo no hover */
-        color: #ffffff !important; /* Cor do texto no hover */
-        border-color: #4B2995 !important; /* Cor da borda no hover */
-    }
 
-    /* Estilos de Ativo (Clique) para os Botões de Filtro de Produtos */
-    .product-filters .btn:active,
-    .product-filters .btn:focus {
-        background-color: #3A1F74 !important; /* Cor de fundo ao clicar */
-        color: #ffffff !important; /* Cor do texto ao clicar */
-        border-color: #3A1F74 !important; /* Cor da borda ao clicar */
-        box-shadow: inset !important; /* Remove a sombra padrão do Bootstrap */
-    }
+footer .col-md-4 {
+    margin-bottom: 20px; /* Adiciona espaço entre as colunas se necessário */
+}
+
+footer img {
+    height: 200px; /* Ajusta a altura da imagem do logo */
+}

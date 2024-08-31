@@ -16,22 +16,38 @@
     <!-- CSS Responsivo -->
     <link rel="stylesheet" href="responsive.css">
 
+    <style>
+        /* Estilos Personalizados */
+        .section-title {
+            margin-bottom: 30px; /* Espaço entre título e produtos */
+        }
+        .btn-purple {
+            background-color: #6f42c1;
+            color: white;
+            border: none;
+        }
+        .btn-purple:hover {
+            background-color: #563d7c;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 <!-- Fundo Preto -->
 <div class="black-background">
-    <header class="bg-black text-white p-3" >
+    <header class="bg-black text-white p-3">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center" style="background-color: #171414; padding: 16px; padding-left: -290px; margin-top: -7px; margin-bottom: -10px; margin-left: -200px; margin-right: -200px;" >
+            <div class="d-flex justify-content-between align-items-center" style="background-color: #171414; padding: 16px; margin: -7px -200px -10px -200px;">
                 <div class="d-flex align-items-center">
-                    <p class="caixa"><i class="bi bi-geo-alt-fill " style="color: #EF7216;"></i> SESI-166, Santo André - SP</p>
+                    <p class="caixa"><i class="bi bi-geo-alt-fill" style="color: #EF7216;"></i> SESI-166, Santo André - SP</p>
                 </div>
                 <a href="#" class="text-white"><i class="bi bi-cart-fill" style="color: #EF7216;"></i></a>
             </div>
         </div>
     </header>
-    <div style="margin-left: 200px;">
+    <br>
+    <div style="text-align: center; color: white;">
         <h4>"Cantina Escolar: Preços Baixos, Grandes Sabores!"</h4>
     </div>
     <!-- Barra de Pesquisa -->
@@ -67,94 +83,257 @@
             <span class="sr-only">Próximo</span>
         </a>
     </div>
-</div>
 
 <!-- Botões de Filtro de Produtos -->
 <div class="product-filters text-center py-3">
-    <h4 style="margin-left: -1200px; background-color: rgb(255, 255, 255); color: black;">Nossos Produtos</h4>
-    <div class="container" style="margin-left: -210px; margin-top: 20px; "> 
-        <button type="button" class="btn btn-outline-primary" style="color: #4B2995; border-color: #4B2995; font-weight: bold;">Bebidas</button>
-        <button type="button" class="btn btn-outline-primary" style="color: #4B2995; border-color: #4B2995; font-weight: bold;">Salgados</button>
-        <button type="button" class="btn btn-outline-primary" style="color: #4B2995; border-color: #4B2995; font-weight: bold;">Outros</button>
+    <div class="container">
+        <button type="button" class="btn btn-filter">Bebidas</button>
+        <button type="button" class="btn btn-filter">Salgados</button>
+        <button type="button" class="btn btn-filter">Outros</button>
     </div>
 </div>
-
-<!-- Produtos -->
+</div>
+<br><br><br>
+<!-- Seção de Produtos -->
 <div class="container">
-    <div class="row justify-content-center">
-        <!-- Bebidas -->
+    <!-- Bebidas -->
+    <h4 class="text-left section-title" style="background-color: rgb(255, 255, 255); color: black;">Bebidas</h4>
+    <div class="row">
+        <!-- Linha 1 de Bebidas -->
         <div class="col-md-4 mb-4">
-            <h4 class="text-center" style= "background-color: rgb(255, 255, 255); color: black;">Bebidas</h4>
             <div class="card mx-auto" style="width: 18rem;">
                 <img class="card-img-top" src="https://via.placeholder.com/150" alt="Água Mineral">
                 <div class="card-body">
                     <h5 class="card-title">Água Mineral</h5>
                     <p class="card-text">R$ 2,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
                 </div>
             </div>
         </div>
-
-        <!-- Salgados -->
         <div class="col-md-4 mb-4">
-            <h4 class="text-center" style= "background-color: rgb(255, 255, 255); color: black;">Salgados</h4>
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Refrigerante">
+                <div class="card-body">
+                    <h5 class="card-title">Refrigerante</h5>
+                    <p class="card-text">R$ 4,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Suco de Laranja">
+                <div class="card-body">
+                    <h5 class="card-title">Suco de Laranja</h5>
+                    <p class="card-text">R$ 3,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha 2 de Bebidas -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Chá Gelado">
+                <div class="card-body">
+                    <h5 class="card-title">Chá Gelado</h5>
+                    <p class="card-text">R$ 3,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Energético">
+                <div class="card-body">
+                    <h5 class="card-title">Energético</h5>
+                    <p class="card-text">R$ 5,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Água de Coco">
+                <div class="card-body">
+                    <h5 class="card-title">Água de Coco</h5>
+                    <p class="card-text">R$ 4,00</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Salgados -->
+    <h4 class="text-left section-title mt-5" style="background-color: rgb(255, 255, 255); color: black;">Salgados</h4>
+    <div class="row">
+        <!-- Linha 1 de Salgados -->
+        <div class="col-md-4 mb-4">
             <div class="card mx-auto" style="width: 18rem;">
                 <img class="card-img-top" src="https://via.placeholder.com/150" alt="Coxinha">
                 <div class="card-body">
                     <h5 class="card-title">Coxinha</h5>
                     <p class="card-text">R$ 4,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
                 </div>
             </div>
         </div>
-
-        <!-- Outros -->
         <div class="col-md-4 mb-4">
-            <h4 class="text-center" style= "background-color: rgb(255, 255, 255); color: black;">Outros</h4>
             <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Doces">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pão de Queijo">
                 <div class="card-body">
-                    <h5 class="card-title">Doces</h5>
-                    <p class="card-text">R$ 0,50</p>
+                    <h5 class="card-title">Pão de Queijo</h5>
+                    <p class="card-text">R$ 2,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Kibe">
+                <div class="card-body">
+                    <h5 class="card-title">Kibe</h5>
+                    <p class="card-text">R$ 3,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha 2 de Salgados -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Empada">
+                <div class="card-body">
+                    <h5 class="card-title">Empada</h5>
+                    <p class="card-text">R$ 4,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Esfiha">
+                <div class="card-body">
+                    <h5 class="card-title">Esfiha</h5>
+                    <p class="card-text">R$ 3,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pastel">
+                <div class="card-body">
+                    <h5 class="card-title">Pastel</h5>
+                    <p class="card-text">R$ 3,00</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Salgados -->
+    <h4 class="text-left section-title mt-5" style="background-color: rgb(255, 255, 255); color: black;">Salgados</h4>
+    <div class="row">
+        <!-- Linha 1 de Salgados -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Coxinha">
+                <div class="card-body">
+                    <h5 class="card-title">Coxinha</h5>
+                    <p class="card-text">R$ 4,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pão de Queijo">
+                <div class="card-body">
+                    <h5 class="card-title">Pão de Queijo</h5>
+                    <p class="card-text">R$ 2,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Kibe">
+                <div class="card-body">
+                    <h5 class="card-title">Kibe</h5>
+                    <p class="card-text">R$ 3,99</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Linha 2 de Salgados -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Empada">
+                <div class="card-body">
+                    <h5 class="card-title">Empada</h5>
+                    <p class="card-text">R$ 4,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Esfiha">
+                <div class="card-body">
+                    <h5 class="card-title">Esfiha</h5>
+                    <p class="card-text">R$ 3,50</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pastel">
+                <div class="card-body">
+                    <h5 class="card-title">Pastel</h5>
+                    <p class="card-text">R$ 3,00</p>
+                    <a href="#" class="btn btn-outline-dark">Comprar</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <!-- Rodapé -->
-<footer class="text-white p-4 mt-5">
+<footer class="text-white py-4" style="background-color: #171414;">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="Logo/1-removebg-preview.png" alt="Logo Empresa" class="mb-3" style="height: 200px;">
-                <p>© 2024 Flex Food. Todos os direitos reservados.</p>
+        <div class="row text-center text-md-left">
+            <!-- Coluna 1 -->
+            <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
+                <img src="Logo/1-removebg-preview.png" alt="Logo Empresa" class="mb-3" style="max-height: 150px;">
+                <p>©️ 2024 Flex Food. Todos os direitos reservados.</p>
             </div>
-            <div class="col-md-4 text-center">
+            <!-- Coluna 2 -->
+            <div class="col-md-4 mb-4 mb-md-0">
                 <h5>COMPANY</h5>
                 <ul class="list-unstyled">
-                    <li>Política de Privacidade</li>
-                    <li>Termos de Uso</li>
-                    <li>FAQ</li>
-                    <li>Sobre Nós</li>
+                    <li><a href="#" class="text-white">Política de Privacidade</a></li>
+                    <li><a href="#" class="text-white">Termos de Uso</a></li>
+                    <li><a href="#" class="text-white">FAQ</a></li>
+                    <li><a href="#" class="text-white">Sobre Nós</a></li>
                 </ul>
             </div>
-            <div class="col-md-4 text-center">
+            <!-- Coluna 3 -->
+            <div class="col-md-4 d-flex flex-column align-items-center align-items-md-start">
                 <h5>CONTATOS</h5>
                 <p>11 1234-5678</p>
                 <p>flexfood44@gmail.com</p>
                 <div>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<!-- Bootstrap JS and dependencies -->
+<!-- Scripts do Bootstrap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
