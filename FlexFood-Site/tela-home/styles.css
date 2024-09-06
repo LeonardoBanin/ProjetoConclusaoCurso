@@ -88,8 +88,8 @@ header {
 }
 
 .card-img-top {
-    height: 150px;
-    object-fit: cover;
+    height: 230px;
+    object-fit: fill;
 }
 
 /* Estilo do Rodapé */
