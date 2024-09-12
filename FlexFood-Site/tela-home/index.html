@@ -1,394 +1,633 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex Food</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- CSS Customizado -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- CSS Responsivo -->
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
 
     <style>
-        /* Estilos Personalizados */
-        .section-title {
-            margin-bottom: 30px; /* Espaço entre título e produtos */
-        }
-        .btn-purple {
-            background-color: #6f42c1;
-            color: white;
-            border: none;
-        }
-        .btn-purple:hover {
-            background-color: #563d7c;
-            color: white;
-        }
+      /* Estilos Personalizados */
+      .section-title {
+        margin-bottom: 30px; /* Espaço entre título e produtos */
+      }
+      .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+      }
+      .btn-purple:hover {
+        background-color: #563d7c;
+        color: white;
+      }
     </style>
-</head>
-<body>
-
-
-<!-- Fundo Preto -->
-<div class="black-background">
-    <header class="bg-black text-white p-3">
+  </head>
+  <body>
+    <!-- Fundo Preto -->
+    <div class="black-background">
+      <header class="bg-black text-white p-3">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center" style="background-color: #171414; padding: 16px; margin: -7px -200px -10px -200px;">
-                <div class="d-flex align-items-center">
-                    <p class="caixa"><i class="bi bi-geo-alt-fill" style="color: #EF7216;"></i> SESI-166, Santo André - SP</p>
-                </div>
-                <a href="#" class="text-white"><i class="bi bi-cart-fill" style="color: #EF7216;"></i></a>
+          <div
+            class="d-flex justify-content-between align-items-center"
+            style="
+              background-color: #171414;
+              padding: 16px;
+              margin: -7px -200px -10px -200px;
+            "
+          >
+            <div class="d-flex align-items-center">
+              <p class="caixa">
+                <i class="bi bi-geo-alt-fill" style="color: #ef7216"></i>
+                SESI-166, Santo André - SP
+              </p>
             </div>
+            <a href="#" class="text-white"
+              ><i class="bi bi-cart-fill" style="color: #ef7216"></i
+            ></a>
+          </div>
         </div>
-    </header>
-    <br>
-    <div style="text-align: center; color: white;">
+      </header>
+      <br />
+      <div style="text-align: center; color: white">
         <h4>"Cantina Escolar: Preços Baixos, Grandes Sabores!"</h4>
-    </div>
-    <!-- Barra de Pesquisa -->
-    <div class="search-bar py-3">
+      </div>
+      <!-- Barra de Pesquisa -->
+      <div class="search-bar py-3">
         <div class="container">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text text-white border-0" style="background-color: #403937;"><i class="bi bi-search" style="color: #8D8686;"></i></span>
-                </div>
-                <input type="text" class="form-control text-white" style="background-color: #403937; border: #403937;" placeholder="Pesquisar...">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span
+                class="input-group-text text-white border-0"
+                style="background-color: #403937"
+                ><i class="bi bi-search" style="color: #8d8686"></i
+              ></span>
             </div>
+            <input
+              type="text"
+              class="form-control text-white"
+              style="background-color: #403937; border: #403937"
+              placeholder="Pesquisar..."
+            />
+          </div>
         </div>
-    </div>
-    <!-- Carrossel de Produtos -->
-    <div id="carouselProducts" class="carousel slide my-4 container" data-ride="carousel">
+      </div>
+      <!-- Carrossel de Produtos -->
+      <div
+        id="carouselProducts"
+        class="carousel slide my-4 container"
+        data-ride="carousel"
+      >
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x200" class="d-block w-100" alt="Coxinha">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x200" class="d-block w-100" alt="Refrigerante">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x200" class="d-block w-100" alt="Bolachas Bono">
-            </div>
+          <div class="carousel-item active">
+            <img
+              src="Logo/banner.jpg"
+              class="d-block w-100 img-fluid"
+              style="object-fit: fill; height: 400px"
+              alt="Coxinha"
+            />
         </div>
-        <a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
+        <a
+          class="carousel-control-prev"
+          href="#carouselProducts"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
         </a>
-        <a class="carousel-control-next" href="#carouselProducts" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Próximo</span>
+        <a
+          class="carousel-control-next"
+          href="#carouselProducts"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
         </a>
-    </div>
+      </div>
 
-    <!-- Botões de Filtro de Produtos -->
-    <div class="product-filters text-center py-3">
+      <!-- Botões de Filtro de Produtos -->
+      <div class="product-filters text-center py-3">
         <div class="container">
-            <button type="button" class="btn btn-filter" data-target="#bebidas">Bebidas</button>
-            <button type="button" class="btn btn-filter" data-target="#salgados">Salgados</button>
-            <button type="button" class="btn btn-filter" data-target="#outros">Outros</button>
+          <button type="button" class="btn btn-filter" data-target="#bebidas">
+            Bebidas
+          </button>
+          <button type="button" class="btn btn-filter" data-target="#salgados">
+            Salgados
+          </button>
+          <button type="button" class="btn btn-filter" data-target="#outros">
+            Outros
+          </button>
         </div>
+      </div>
     </div>
-</div>
-<br><br><br>
+    <br /><br /><br />
 
-<!-- Seção de Produtos -->
-<div class="container" id="bebidas">
-    <!-- Bebidas -->
-    <h4 class="text-left section-title" style="background-color: rgb(255, 255, 255); color: black;">Bebidas</h4>
-    <div class="row">
+    <!-- Seção de Produtos -->
+    <div class="container" id="bebidas">
+      <!-- Bebidas -->
+      <h4
+        class="text-left section-title"
+        style="background-color: rgb(255, 255, 255); color: black"
+      >
+        Bebidas
+      </h4>
+      <div class="row">
         <!-- Linha 1 de Bebidas -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/1.png" alt="Água Mineral">
-                <div class="card-body">
-                    <h5 class="card-title">Água Mineral</h5>
-                    <p class="card-text">R$ 2,99</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://drogariamoderna.vtexassets.com/arquivos/ids/251997-800-auto?v=638151218022670000&width=800&height=auto&aspect=true"
+              alt="Água Mineral"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Água Mineral</h5>
+              <p class="card-text">R$ 2,99</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/2.png" alt="Refrigerante">
-                <div class="card-body">
-                    <h5 class="card-title">Refrigerante</h5>
-                    <p class="card-text">R$ 4,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://images.tcdn.com.br/img/img_prod/858764/refrigerante_coca_cola_lata_350ml_c_12_359_1_20201021152315.jpg"
+              alt="Refrigerante"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Refrigerante</h5>
+              <p class="card-text">R$ 6,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/3.png" alt="Suco">
-                <div class="card-body">
-                    <h5 class="card-title">Suco</h5>
-                    <p class="card-text">R$ 3,20</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://tfdfn2.vtexassets.com/arquivos/ids/235701/suco-del-valle-maracuja-lata-290ml.jpg?v=638279845517330000"
+              alt="Suco"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Suco</h5>
+              <p class="card-text">R$ 7,10</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <!-- Linha 2 de Bebidas -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/4.png" alt="Água com Gás">
-                <div class="card-body">
-                    <h5 class="card-title">Água com Gás</h5>
-                    <p class="card-text">R$ 3,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://img.freepik.com/fotos-premium/xicara-de-cafe-e-graos-de-cafe-em-um-fundo-branco_97567-1688.jpg"
+              alt="Café"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Café</h5>
+              <p class="card-text">R$ 4,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/5.png" alt="Chá Gelado">
-                <div class="card-body">
-                    <h5 class="card-title">Chá Gelado</h5>
-                    <p class="card-text">R$ 3,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://t3.ftcdn.net/jpg/05/83/60/92/360_F_583609291_ptywKd4ctjgqihTRoV3QcMFMOK7U2U6q.jpg"
+              alt="Café com Leite"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Café com Leite</h5>
+              <p class="card-text">R$ 4,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/6.png" alt="Energético">
-                <div class="card-body">
-                    <h5 class="card-title">Energético</h5>
-                    <p class="card-text">R$ 5,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://img.freepik.com/fotos-premium/copo-de-cha-de-camomila-isolado-no-fundo-branco_185193-10729.jpg"
+              alt="Chá"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chá</h5>
+              <p class="card-text">R$ 3,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <!-- Linha 3 de Bebidas -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/7.png" alt="Água com Gás">
-                <div class="card-body">
-                    <h5 class="card-title">Água com Gás</h5>
-                    <p class="card-text">R$ 3,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://img.freepik.com/fotos-premium/chocolate-quente-em-fundo-branco-gerado-por-ia_985692-512.jpg"
+              alt="Chocolate Quente"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Quente</h5>
+              <p class="card-text">R$ 7,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/8.png" alt="Chá Gelado">
-                <div class="card-body">
-                    <h5 class="card-title">Chá Gelado</h5>
-                    <p class="card-text">R$ 3,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://drogariaspacheco.vteximg.com.br/arquivos/ids/1031758-1000-1000/422169---Bebida-Lactea-Nescau-Prontinho-Tetra-Pak-200ml-1.jpg?v=638119255680970000"
+              alt="Achocolatado"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Achocolatado</h5>
+              <p class="card-text">R$ 5,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="bebidas/9.png" alt="Energético">
-                <div class="card-body">
-                    <h5 class="card-title">Energético</h5>
-                    <p class="card-text">R$ 5,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://images.tcdn.com.br/img/img_prod/1115696/energetico_monster_khaotic_juice_tropical_473ml_653_1_4f35b17e36fbec2a0a4f8e88cb832dee.png"
+              alt="Energético"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Energético</h5>
+              <p class="card-text">R$ 10,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Seção de Salgados -->
-<div class="container" id="salgados">
-    <h4 class="text-left section-title mt-5" style="background-color: rgb(255, 255, 255); color: black;">Salgados</h4>
-    <div class="row">
+    <!-- Seção de Salgados -->
+    <div class="container" id="salgados">
+      <h4
+        class="text-left section-title mt-5"
+        style="background-color: rgb(255, 255, 255); color: black"
+      >
+        Salgados
+      </h4>
+      <div class="row">
         <!-- Linha 1 de Salgados -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Coxinha">
-                <div class="card-body">
-                    <h5 class="card-title">Coxinha</h5>
-                    <p class="card-text">R$ 4,99</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Coxinha"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Coxinha</h5>
+              <p class="card-text">R$ 4,99</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Empada">
-                <div class="card-body">
-                    <h5 class="card-title">Empada</h5>
-                    <p class="card-text">R$ 5,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Empada"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Empada</h5>
+              <p class="card-text">R$ 5,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pastel">
-                <div class="card-body">
-                    <h5 class="card-title">Pastel</h5>
-                    <p class="card-text">R$ 4,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Pastel"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pastel</h5>
+              <p class="card-text">R$ 4,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <!-- Linha 2 de Salgados -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Bolinho de Bacalhau">
-                <div class="card-body">
-                    <h5 class="card-title">Bolinho de Bacalhau</h5>
-                    <p class="card-text">R$ 5,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Bolinho de Bacalhau"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolinho de Bacalhau</h5>
+              <p class="card-text">R$ 5,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Quibe">
-                <div class="card-body">
-                    <h5 class="card-title">Quibe</h5>
-                    <p class="card-text">R$ 4,20</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Quibe"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Quibe</h5>
+              <p class="card-text">R$ 4,20</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Tapioca">
-                <div class="card-body">
-                    <h5 class="card-title">Tapioca</h5>
-                    <p class="card-text">R$ 4,80</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Tapioca"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tapioca</h5>
+              <p class="card-text">R$ 4,80</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
+        <!-- Linha 3 de Salgados -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://img.freepik.com/fotos-premium/chocolate-quente-em-fundo-branco-gerado-por-ia_985692-512.jpg"
+                alt="Chocolate Quente"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Quente</h5>
+                <p class="card-text">R$ 7,00</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://drogariaspacheco.vteximg.com.br/arquivos/ids/1031758-1000-1000/422169---Bebida-Lactea-Nescau-Prontinho-Tetra-Pak-200ml-1.jpg?v=638119255680970000"
+                alt="Achocolatado"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Achocolatado</h5>
+                <p class="card-text">R$ 5,50</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://images.tcdn.com.br/img/img_prod/1115696/energetico_monster_khaotic_juice_tropical_473ml_653_1_4f35b17e36fbec2a0a4f8e88cb832dee.png"
+                alt="Energético"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Energético</h5>
+                <p class="card-text">R$ 10,00</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-</div>
 
-<!-- Seção de Outros -->
-<div class="container" id="outros">
-    <h4 class="text-left section-title mt-5" style="background-color: rgb(255, 255, 255); color: black;">Outros</h4>
-    <div class="row">
+    <!-- Seção de Outros -->
+    <div class="container" id="outros">
+      <h4
+        class="text-left section-title mt-5"
+        style="background-color: rgb(255, 255, 255); color: black"
+      >
+        Outros
+      </h4>
+      <div class="row">
         <!-- Linha 1 de Outros -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Bolacha">
-                <div class="card-body">
-                    <h5 class="card-title">Bolacha</h5>
-                    <p class="card-text">R$ 1,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Bolacha"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bolacha</h5>
+              <p class="card-text">R$ 1,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Muffin">
-                <div class="card-body">
-                    <h5 class="card-title">Muffin</h5>
-                    <p class="card-text">R$ 3,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Muffin"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Muffin</h5>
+              <p class="card-text">R$ 3,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Brownie">
-                <div class="card-body">
-                    <h5 class="card-title">Brownie</h5>
-                    <p class="card-text">R$ 2,80</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Brownie"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brownie</h5>
+              <p class="card-text">R$ 2,80</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <!-- Linha 2 de Outros -->
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Granola">
-                <div class="card-body">
-                    <h5 class="card-title">Granola</h5>
-                    <p class="card-text">R$ 3,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Granola"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Granola</h5>
+              <p class="card-text">R$ 3,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Biscoito">
-                <div class="card-body">
-                    <h5 class="card-title">Biscoito</h5>
-                    <p class="card-text">R$ 2,00</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Biscoito"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Biscoito</h5>
+              <p class="card-text">R$ 2,00</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://via.placeholder.com/150" alt="Pipoca">
-                <div class="card-body">
-                    <h5 class="card-title">Pipoca</h5>
-                    <p class="card-text">R$ 2,50</p>
-                    <a href="#" class="btn btn-outline-dark">Comprar</a>
-                </div>
+          <div class="card mx-auto" style="width: 18rem">
+            <img
+              class="card-img-top"
+              src="https://via.placeholder.com/150"
+              alt="Pipoca"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pipoca</h5>
+              <p class="card-text">R$ 2,50</p>
+              <a href="#" class="btn btn-outline-dark">Comprar</a>
             </div>
+          </div>
         </div>
+        <!-- Linha 3 de Outros -->
+        <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://img.freepik.com/fotos-premium/chocolate-quente-em-fundo-branco-gerado-por-ia_985692-512.jpg"
+                alt="Chocolate Quente"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Quente</h5>
+                <p class="card-text">R$ 7,00</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://drogariaspacheco.vteximg.com.br/arquivos/ids/1031758-1000-1000/422169---Bebida-Lactea-Nescau-Prontinho-Tetra-Pak-200ml-1.jpg?v=638119255680970000"
+                alt="Achocolatado"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Achocolatado</h5>
+                <p class="card-text">R$ 5,50</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card mx-auto" style="width: 18rem">
+              <img
+                class="card-img-top"
+                src="https://images.tcdn.com.br/img/img_prod/1115696/energetico_monster_khaotic_juice_tropical_473ml_653_1_4f35b17e36fbec2a0a4f8e88cb832dee.png"
+                alt="Energético"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Energético</h5>
+                <p class="card-text">R$ 10,00</p>
+                <a href="#" class="btn btn-outline-dark">Comprar</a>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-</div>
-<!-- Rodapé -->
-<footer class="text-white p-4 mt-5">
-    <div class="container">
+    <!-- Rodapé -->
+    <footer class="text-white p-4 mt-5">
+      <div class="container">
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="Logo/1-removebg-preview.png" alt="Logo Empresa" class="mb-3" style="height: 200px;">
-                <p>© 2024 Flex Food. Todos os direitos reservados.</p>
+          <div class="col-md-4 text-center">
+            <img
+              src="Logo/1-removebg-preview.png"
+              alt="Logo Empresa"
+              class="mb-3"
+              style="height: 200px"
+            />
+            <p>© 2024 Flex Food. Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>COMPANY</h5>
+            <ul class="list-unstyled">
+              <li>Política de Privacidade</li>
+              <li>Termos de Uso</li>
+              <li>FAQ</li>
+              <li>Sobre Nós</li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>CONTATOS</h5>
+            <p>11 1234-5678</p>
+            <p>flexfood44@gmail.com</p>
+            <div>
+              <a href="#" class="text-white mx-1"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="text-white mx-1"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="text-white mx-1"
+                ><i class="bi bi-twitter"></i
+              ></a>
             </div>
-            <div class="col-md-4 text-center">
-                <h5>COMPANY</h5>
-                <ul class="list-unstyled">
-                    <li>Política de Privacidade</li>
-                    <li>Termos de Uso</li>
-                    <li>FAQ</li>
-                    <li>Sobre Nós</li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-center">
-                <h5>CONTATOS</h5>
-                <p>11 1234-5678</p>
-                <p>flexfood44@gmail.com</p>
-                <div>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="text-white mx-1"><i class="bi bi-twitter"></i></a>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-<!-- JAVASCRIPT -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const buttons = document.querySelectorAll('.btn-filter');
-        
-        buttons.forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-target');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
+    <!-- JAVASCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".btn-filter");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
         });
-    });
-</script>
+      });
+    </script>
 
-<!-- Scripts do Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
 </html>

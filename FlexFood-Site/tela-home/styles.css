@@ -30,7 +30,6 @@ header {
 /* Estilo da Barra de Pesquisa */
 .search-bar {
     background-color: #000000;
-    border: 1px solid #4B2995; /* Estilo da borda roxa */
     border-radius: 20px; /* Borda arredondada */
     padding: 5px; /* Espaçamento interno */
     display: flex; /* Usando flex para alinhamento */
