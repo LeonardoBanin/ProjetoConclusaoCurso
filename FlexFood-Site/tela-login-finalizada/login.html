@@ -10,11 +10,11 @@
 <body>
 
     <div class="login-container">
-        <a href="pagina-de-destino.html">
+        <a href="home.html">
             <img src="img/logo.png" alt="Flex Food Logo">
         </a>
         <h1>FlexFood</h1>
-        <form action="pagina-de-destino.html" method="get"> <!-- Redireciona para a página desejada -->
+        <form id="loginForm" action="home.html" method="get">
             <input type="text" placeholder="Número da Matrícula" required>
             <div class="password-container">
                 <input type="password" id="password" placeholder="Senha" required>
@@ -22,16 +22,19 @@
             </div>
             <p style="color: red;">Esqueceu sua senha?</p>
             <p>Entre em contato com a secretária da sua escola.</p>
-            <button type="submit">Entrar</button>
-        </form>
+            <!-- Botão Entrar -->
+             <div>
+            <a href="/FlexFood-Site/tela-home/index.html" class="button">Entrar</a>
+        </div>
+    </form>
     </div>
 
     <script>
+        // Função para mostrar/ocultar senha
         function togglePassword() {
             const passwordField = document.getElementById('password');
             const type = passwordField.type === 'password' ? 'text' : 'password';
             passwordField.type = type; 
-
         }
     </script>
 

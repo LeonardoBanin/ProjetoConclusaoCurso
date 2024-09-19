@@ -41,7 +41,7 @@ body {
 .login-container a {
     display: block;
     margin: 10px 0;
-    color: #d32f2f;
+    color: #ffffff;
     text-decoration: none;
     font-size: 12px;
 }
@@ -50,19 +50,25 @@ body {
     text-decoration: underline;
 }
 
-.login-container button {
-    width: 100%;
+.button {
+    display: inline-block;
+    width: 320px;
+    height: 20px;
     padding: 10px;
-    background-color: #d32f2f;
-    color: #fff;
-    border: none;
+    background-color: #d32f2f; /* Cor de fundo do botão */
+    color: #ffffff; /* Cor do texto do botão (branco) */
+    text-decoration: none; /* Remove sublinhado */
     border-radius: 5px;
+    text-align: center;
     cursor: pointer;
 }
 
-.login-container button:hover {
-    background-color: #b71c1c;
+
+
+.button:hover {
+    background-color: #b71c1c; /* Cor de fundo ao passar o mouse */
 }
+
 .password-container {
     position: relative;
     width: 100%;
