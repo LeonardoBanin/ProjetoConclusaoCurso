@@ -7,6 +7,10 @@
 /* Estilo do Cabeçalho */
 header {
     background-color: #000000;
+    display: flex; /* Utilizar flexbox para layout */
+    justify-content: space-between; /* Alinhar conteúdo do header nos extremos */
+    align-items: center; /* Centralizar verticalmente os itens no header */
+    padding: 10px 20px; /* Ajuste do padding conforme necessário */
 }
 
 .bg-gray {
@@ -17,14 +21,33 @@ header {
     color: #212529;
 }
 
+/* Mover o endereço para a esquerda */
+.header-address {
+    margin-left: 0; /* Alinhar endereço à esquerda */
+    color: #ffffff; /* Cor do texto */
+}
+
 /* Estilo da Barra de Pesquisa */
 .search-bar {
     background-color: #000000;
+    border-radius: 20px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+    display: flex; /* Usando flex para alinhamento */
+    align-items: center; /* Centralizar verticalmente */
+    margin-bottom: 20px; /* Espaçamento inferior */
 }
 
 .input-group-text {
     background-color: #343a40;
     color: #ffffff;
+    border: none; /* Remove a borda para que a barra de pesquisa tenha borda unificada */
+    margin-right: 5px; /* Espaço entre o ícone e o campo de entrada */
+}
+
+/* Ícone de lupa na barra de pesquisa */
+.search-icon {
+    color: #fff; /* Cor do ícone de lupa */
+    margin-right: 10px; /* Espaço entre o ícone e o campo de entrada */
 }
 
 /* Estilo do Carrossel de Produtos */
@@ -38,6 +61,25 @@ header {
     border-radius: 20px;
 }
 
+.btn-filter {
+    color: #53398a; /* Texto roxo */
+    background-color: #fff; /* Fundo branco */
+    border-color: #4B2995; /* Borda roxa */
+}
+
+.btn-filter:hover {
+    color: #fff; /* Texto branco no hover */
+    background-color: #4B2995; /* Fundo roxo no hover */
+    border-color: #4B2995; /* Borda roxa no hover */
+}
+
+.btn-filter:focus, .btn-filter:active {
+    color: #000000; /* Texto branco ao focar ou clicar */
+    background-color: #ffffff; /* Fundo roxo ao focar ou clicar */
+    border-color: #513f79; /* Borda roxa ao focar ou clicar */
+    box-shadow: none; /* Remove sombra padrão */
+}
+
 /* Estilo das Cartas de Produtos */
 .card {
     border-radius: 10px;
@@ -45,33 +87,31 @@ header {
 }
 
 .card-img-top {
-    height: 150px;
-    object-fit: cover;
+    height: 230px;
+    object-fit: fill;
 }
 
 /* Estilo do Rodapé */
 footer {
-    background-color: #171819;
+    background-color: #171819; /* Cor de fundo preta */
+    width: 100%; /* Garante que o rodapé ocupe toda a largura */
+    position: relative; /* Posiciona o rodapé relativo ao seu contêiner */
+    bottom: 0; /* Garante que o rodapé fique na parte inferior da página */
 }
 
-footer .list-unstyled li {
-    margin: 5px 0;
+footer .container {
+    padding: 0 15px; /* Ajuste o padding conforme necessário */
 }
 
-footer .text-white {
-    color: #fff;
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
 }
-.caixa{
-    color: rgb(255, 255, 255);
-    background-color: #171414;
+
+footer .col-md-4 {
+    margin-bottom: 20px; /* Adiciona espaço entre as colunas se necessário */
 }
-h4{
-    color: #fff;
-    background-color: #000000;
-    margin: -0px;
-    margin-top: 20px;
-    
-}
-.form-control{
-    color: ;
+
+footer img {
+    height: 200px; /* Ajusta a altura da imagem do logo */
 }

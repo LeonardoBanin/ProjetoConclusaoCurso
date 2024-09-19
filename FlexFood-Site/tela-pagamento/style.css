@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento à esquerda */
+.pedido {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.pedido p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.total p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn-pagamento {
+    display: block;
+    width: 100%;
+    background-color: #D50000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.formas-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.forma-pagamento {
+    background-color: #F44336;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pix {
+    background-color: #E91E63;
+}
+
+.debito {
+    background-color: #FF9800;
+}
+
+.credito {
+    background-color: #FFC107;
+}
+
+.qr-code-section p {
+    margin-bottom: 10px;
+}
+
+.qr-code {
+    width: 150px;
+    height: 150px;
+}
+
+.codigo {
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.btn-processando {
+    display: block;
+    width: 100%;
+    background-color: #D50000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
