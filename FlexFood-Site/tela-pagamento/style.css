@@ -93,14 +93,17 @@ hr {
 
 .pix {
     background-color: #E91E63;
+    border-radius: 10px;
 }
 
 .debito {
     background-color: #FF9800;
+    border-radius: 10px;
 }
 
 .credito {
     background-color: #FFC107;
+    border-radius: 10px;
 }
 
 .qr-code-section p {
