@@ -64,7 +64,7 @@ hr {
 .btn-pagamento {
     display: block;
     width: 100%;
-    background-color: #D50000;
+    background-color: #C20324;
     color: white;
     padding: 10px;
     border: none;
@@ -82,7 +82,7 @@ hr {
 }
 
 .forma-pagamento {
-    background-color: #F44336;
+    background-color: #C20324;
     color: white;
     padding: 10px;
     border: none;
@@ -92,15 +92,15 @@ hr {
 }
 
 .pix {
-    background-color: #E91E63;
+    background-color: #C20324;
 }
 
 .debito {
-    background-color: #FF9800;
+    background-color: #EF7216;
 }
 
 .credito {
-    background-color: #FFC107;
+    background-color: #EF7216;
 }
 
 .qr-code-section p {
@@ -121,7 +121,7 @@ hr {
 .btn-processando {
     display: block;
     width: 100%;
-    background-color: #D50000;
+    background-color: #C20324;
     color: white;
     padding: 10px;
     border: none;
