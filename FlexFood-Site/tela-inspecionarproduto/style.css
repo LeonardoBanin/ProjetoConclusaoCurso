@@ -1,3 +1,4 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +26,12 @@ body {
 .cart-icon i {
     font-size: 24px; /* Ajustando o tamanho do ícone de carrinho */
     color: #ef7216;  /* Cor do ícone */
+}
+
+.back-arrow i {
+    font-size: 24px; /* Ajuste o tamanho da seta */
+    color: #ef7216; /* Cor da seta */
+    margin-left: 5px; /* Espaço entre a imagem e a seta */
 }
 
 .product-page {
@@ -78,32 +85,73 @@ body {
     cursor: pointer;
     font-size: 16px;
     text-transform: uppercase;
+    text-decoration: none; /* Removendo o sublinhado */
 }
 
-.footer {
-    background-color: #000;
+/* Estilo do Rodapé */
+footer {
+    background-color: #171819; /* Cor de fundo preta */
     color: white;
     padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
     text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
+footer .container {
+    padding: 0 15px;
 }
 
-.footer h3 {
+footer .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .col-md-4 {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+footer img {
+    height: 200px; /* Ajusta a altura da imagem do logo */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #ef7216; /* Efeito hover nos ícones sociais */
+}
+
+/* Estilo dos títulos no rodapé */
+footer h5 {
+    margin-bottom: 15px;
+    color: #ef7216; /* Cor laranja para os títulos */
+}
+
+footer p {
     margin-bottom: 10px;
 }
 
-.footer p {
-    font-size: 14px;
-    margin-bottom: 5px;
+/* Estilo das redes sociais */
+footer .social-media a {
+    margin: 0 5px;
+    font-size: 18px;
 }
 
-.social-media a {
-    margin: 0 5px;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+.mb-3, .my-3 {
+    margin-top: -30px;
 }

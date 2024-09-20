@@ -128,4 +128,20 @@ hr {
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    text-align: center; /* Para centralizar o texto */
+    text-decoration: none; /* Remove o sublinhado */
 }
+
+
+
+
+.logo-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    margin-left:200px; /* Espaçamento do topo e da direita */
+    padding-right:-10px;
+    padding-bottom: 10px;
+}
+
