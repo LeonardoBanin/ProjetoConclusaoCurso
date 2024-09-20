@@ -59,24 +59,26 @@ header {
 /* Estilo dos Botões de Filtro */
 .product-filters .btn {
     border-radius: 20px;
+    margin-top: 30px;
 }
 
 .btn-filter {
-    color: #53398a; /* Texto roxo */
+    color: blue; /* Texto roxo */
     background-color: #fff; /* Fundo branco */
-    border-color: #4B2995; /* Borda roxa */
+    border-color: blue; /* Borda roxa */
+
 }
 
 .btn-filter:hover {
     color: #fff; /* Texto branco no hover */
-    background-color: #4B2995; /* Fundo roxo no hover */
-    border-color: #4B2995; /* Borda roxa no hover */
+    background-color: #abafb4; /* Fundo roxo no hover */
+    border-color: #abafb4; /* Borda roxa no hover */
 }
 
 .btn-filter:focus, .btn-filter:active {
     color: #000000; /* Texto branco ao focar ou clicar */
     background-color: #ffffff; /* Fundo roxo ao focar ou clicar */
-    border-color: #513f79; /* Borda roxa ao focar ou clicar */
+    border-color: #abafb4; /* Borda roxa ao focar ou clicar */
     box-shadow: none; /* Remove sombra padrão */
 }
 
@@ -110,8 +112,11 @@ footer .row {
 
 footer .col-md-4 {
     margin-bottom: 20px; /* Adiciona espaço entre as colunas se necessário */
+    
 }
 
 footer img {
     height: 200px; /* Ajusta a altura da imagem do logo */
 }
+
+
