@@ -46,22 +46,21 @@ body {
     font-size: 12px;
 }
 
-.login-container a:hover {
-    text-decoration: underline;
-}
 
 .button {
     display: inline-block;
     width: 320px;
-    padding: 12px; /* Aumenta o padding para mais conforto */
+    height: 20px;
+    padding: 10px;
     background-color: #d32f2f; /* Cor de fundo do botão */
     color: #ffffff; /* Cor do texto do botão (branco) */
     text-decoration: none; /* Remove sublinhado */
     border-radius: 5px;
     text-align: center;
-    font-size: 16px; /* Aumenta o tamanho da fonte */
     cursor: pointer;
 }
+
+
 
 .button:hover {
     background-color: #b71c1c; /* Cor de fundo ao passar o mouse */
