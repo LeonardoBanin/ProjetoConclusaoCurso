@@ -1,51 +1,42 @@
-let totalValue = 0;
+const pricePerItem = 4.99;
+let quantity = 1;
 
-function addToCart(itemName, itemPrice) {
-    const cart = document.getElementById('cart');
-    const totalValueElement = document.getElementById('total-value');
-    const emptyCartMessage = document.getElementById('empty-cart-message');
+// Referências dos elementos
+const quantityDisplay = document.getElementById('quantity');
+const itemPriceDisplay = document.getElementById('item-price');
+const totalPriceDisplay = document.getElementById('total-price');
 
-    // Remover a mensagem de carrinho vazio, se presente
-    if (emptyCartMessage) {
-        emptyCartMessage.style.visibility = 'hidden';
-    }
+// Botões
+const subtractBtn = document.getElementById('subtract');
+const addBtn = document.getElementById('add');
+const deleteItemBtn = document.getElementById('delete-item');
 
-    // Criar a estrutura do item no carrinho
-    const cartItem = document.createElement('div');
-    cartItem.className = 'cart-item';
-
-    const itemText = document.createElement('p');
-    itemText.textContent = `${itemName} - R$${itemPrice.toFixed(2)}`;
-
-    const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '🗑️'; // Ícone de lixo
-    deleteButton.onclick = function() {
-        removeFromCart(cartItem, itemPrice);
-    };
-
-    cartItem.appendChild(itemText);
-    cartItem.appendChild(deleteButton);
-    cart.appendChild(cartItem);
-
-    // Atualizar o valor total
-    totalValue += itemPrice;
-    totalValueElement.textContent = totalValue.toFixed(2);
+// Função para atualizar a quantidade e o preço total
+function updatePrice() {
+    const totalItemPrice = (pricePerItem * quantity).toFixed(2);
+    quantityDisplay.textContent = quantity;
+    itemPriceDisplay.textContent = `R$ ${totalItemPrice}`;
+    totalPriceDisplay.textContent = `R$ ${totalItemPrice}`;
 }
 
-function removeFromCart(cartItem, itemPrice) {
-    const cart = document.getElementById('cart');
-    const totalValueElement = document.getElementById('total-value');
+// Adicionar item
+addBtn.addEventListener('click', () => {
+    quantity++;
+    updatePrice();
+});
 
-    // Remover o item do carrinho
-    cart.removeChild(cartItem);
-
-    // Atualizar o valor total
-    totalValue -= itemPrice;
-    totalValueElement.textContent = totalValue.toFixed(2);
-
-    // Mostrar mensagem se o carrinho estiver vazio
-    if (cart.children.length === 0) {
-        const emptyCartMessage = document.getElementById('empty-cart-message');
-        emptyCartMessage.style.visibility = 'visible';
+// Remover item
+subtractBtn.addEventListener('click', () => {
+    if (quantity > 1) {
+        quantity--;
+        updatePrice();
     }
-}
+});
+
+// Remover produto do carrinho
+deleteItemBtn.addEventListener('click', () => {
+    quantity = 0;
+    updatePrice();
+    document.querySelector('.cart-item').style.display = 'none';
+    totalPriceDisplay.textContent = 'R$ 0,00';
+});
