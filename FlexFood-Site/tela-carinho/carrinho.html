@@ -1,53 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexFlood</title>
+    <title>Carrinho de Compras </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Logo/1-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/1-removebg-preview.png" type="image/x-icon">
+</head>
 </head>
 <body>
-    <header>
-        <h1>FlexFlood</h1>
-    </header>
-    
-    <main>
-        <h2>Cardápio</h2>
-        <div class="menu">
-            <div class="item">
-                <h3>Salgado</h3>
-                <p>Preço: R$5,00</p>
-                <button onclick="addToCart('Salgado', 5.00)">Adicionar ao Carrinho</button>
+    <div class="container">
+        <header class="header">
+            <button class="back-btn">←</button>
+            <h2>Carrinho</h2>
+            <img class="logo" src="img/1-removebg-preview.png" alt="Logo">
+        </header>
+        <div class="cart-item">
+            <div class="product">
+                <img src="img/icone.png" alt="Coca Cola">
+                <div class="product-info">
+                    <h3>Refrigerante</h3>
+                    <p>Coca Cola</p>
+                </div>
             </div>
-            <div class="item">
-                <h3>Suco</h3>
-                <p>Preço: R$3,00</p>
-                <button onclick="addToCart('Suco', 3.00)">Adicionar ao Carrinho</button>
+            <div class="quantity">
+                <button class="quantity-btn" id="subtract">−</button>
+                <span id="quantity">1</span>
+                <button class="quantity-btn" id="add">+</button>
             </div>
-            <div class="item">
-                <h3>Chocolate</h3>
-                <p>Preço: R$2,50</p>
-                <button onclick="addToCart('Chocolate', 2.50)">Adicionar ao Carrinho</button>
+            <div class="product-price">
+                <span id="item-price">R$ 4,99</span>
+                <button class="delete-btn" id="delete-item">🗑️</button>
             </div>
         </div>
-
-        <h2>Carrinho</h2>
-        <div id="cart">
-            <p id="empty-cart-message">O carrinho está vazio.</p>
-        </div>
-
-        <div id="total-section">
-            <p>Total: R$ <span id="total-value">0.00</span></p>
-            <button id="confirm-button">Confirmar Pedido</button>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 FlexFlood</p>
-    </footer>
+        <footer class="footer">
+            <div class="total">
+                <span>Valor total</span>
+                <span id="total-price">R$ 4,99</span>
+            </div>
+            <button class="confirm-btn">CONFIRMAR PEDIDO</button>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-

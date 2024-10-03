@@ -59,24 +59,25 @@ header {
 /* Estilo dos Botões de Filtro */
 .product-filters .btn {
     border-radius: 20px;
+    margin-top: 0px;
 }
 
 .btn-filter {
-    color: #53398a; /* Texto roxo */
+    color: blue; /* Texto roxo */
     background-color: #fff; /* Fundo branco */
-    border-color: #4B2995; /* Borda roxa */
+    border-color: blue; /* Borda roxa */
 }
 
 .btn-filter:hover {
     color: #fff; /* Texto branco no hover */
-    background-color: #4B2995; /* Fundo roxo no hover */
-    border-color: #4B2995; /* Borda roxa no hover */
+    background-color: #abafb4; /* Fundo roxo no hover */
+    border-color: #abafb4; /* Borda roxa no hover */
 }
 
 .btn-filter:focus, .btn-filter:active {
     color: #000000; /* Texto branco ao focar ou clicar */
     background-color: #ffffff; /* Fundo roxo ao focar ou clicar */
-    border-color: #513f79; /* Borda roxa ao focar ou clicar */
+    border-color: #abafb4; /* Borda roxa ao focar ou clicar */
     box-shadow: none; /* Remove sombra padrão */
 }
 
@@ -110,8 +111,47 @@ footer .row {
 
 footer .col-md-4 {
     margin-bottom: 20px; /* Adiciona espaço entre as colunas se necessário */
+    margin-top: 30px;
+}
+
+.mb-3, .my-3 {
+    margin-top: -30px;
 }
 
 footer img {
     height: 200px; /* Ajusta a altura da imagem do logo */
+}
+
+/* Estilo dos títulos no rodapé */
+footer h5 {
+    color: #ef7216; /* Cor laranja para os títulos */
+    margin-bottom: 15px;
+}
+
+footer ul li {
+    margin: 5px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #000000; /* Efeito hover nos ícones sociais */
+}
+
+
+.nossos-produtos {
+    text-align: center; /* Centraliza o texto */
+    margin: 30px 0; /* Adiciona espaçamento acima e abaixo */
+}
+
+.nossos-produtos h1 {
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 18px; /* Ajusta o tamanho da fonte */
+    color: #000000; /* Cor do texto (laranja) */
+    font-family: 'Poppins', sans-serif; /* Exemplo de uma fonte elegante */
+  
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
 }
