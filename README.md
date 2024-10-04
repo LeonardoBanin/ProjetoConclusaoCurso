@@ -64,7 +64,7 @@ Abra  seu navegador e pesquise localhost/nomedoprojeto
   ![Canva](https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ)
 
 - **Word**  
-  ![Word](https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ)
+  ![Word](https://files.tecnoblog.net/wp-content/uploads/2016/07/word-700x438.jpg)
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:
