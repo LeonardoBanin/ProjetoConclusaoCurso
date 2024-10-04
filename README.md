@@ -58,10 +58,10 @@ Abra  seu navegador e pesquise localhost/nomedoprojeto
   ![Php](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png)
 
 - **AppGyver**  
-  ![AppGyver](img/App%20giver.png)
+  ![AppGyver](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJnepm-tr5AYZmpbwVNnRHWPFv2ggZMuELw&sg)
 
 - **Canva**  
-  ![Canva](img/App%20Canva.png)
+  ![Canva](https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ)
 
 - **Word**  
 
