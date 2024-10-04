@@ -1,6 +1,6 @@
 # **Flex Food**
 
-<img src="./flexfood/img/logo/1.png" width="600px;" alt="Flex Food">
+<img src="./flexfood/img/logo/2.png" width="600px;" alt="Flex Food">
 
 Flex Food é um sistema de cantina online, desenvolvido para facilitar a compra de lanches em escolas e universidades, permitindo pedidos antecipados via aplicativo e retirada sem filas. O projeto tem como objetivo aumentar a eficiência e a satisfação dos usuários.
 
@@ -55,7 +55,7 @@ Abra  seu navegador e pesquise localhost/nomedoprojeto
   ![JavaScript](https://cdn-icons-png.flaticon.com/512/5968/5968292.png)
 
   **Php**  
-  ![Php](https://www.site.pt/wp-content/uploads/2022/01/o-que-e-php-845x480.jpg)
+  ![Php](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png)
 
 - **AppGyver**  
   ![AppGyver](img/App%20giver.png)
