@@ -17,7 +17,7 @@ require_once("models/message.php");
 
             <div class="col-md-6 mb-3 mt-3">
                 <label for="name">Nome</label>
-                <input class="form-control" id="name" name="name" type="text" placeholder="mouse gamer...">
+                <input class="form-control" id="name" name="name" type="text" placeholder="Coxinha...">
             </div>
             <div class="col-md-6 mb-3 mt-3">
                 <label for="preco">Preço</label>
@@ -25,7 +25,7 @@ require_once("models/message.php");
             </div>
             <div class="col-md-6 mb-3 mt-3">
                 <label for="category">Categoria</label>
-                <input class="form-control" id="category" name="category" type="text" placeholder="Acessórios">
+                <input class="form-control" id="category" name="category" type="text" placeholder="Salgados">
             </div>
             <div class="col-md-6 mb-3 mt-3">
                 <label for="image">Nome da imagem</label>
@@ -34,7 +34,7 @@ require_once("models/message.php");
             <div class="col-md-6 mb-3 mt-3">
                 <label for="description">Descrição</label>
                 <textarea class="form-control" id="description" name="description"
-                    placeholder="mouse gamer bom e barato"></textarea>
+                    placeholder="Com catupry"></textarea>
             </div>
 
             <div class="mb-3 mt-3">
