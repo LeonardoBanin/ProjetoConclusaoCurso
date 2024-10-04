@@ -10,14 +10,16 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Tarefa 1: desenvolver a identidade visual da empresa
 - [x] Tarefa 2: realizar o levantamento de requisitos do projeto
 - [x] Tarefa 3: desenvolvimento das páginas do sistema
-- [ ] Tarefa 4: linkar o projeto com o backend e serviços externos
+- [x] Tarefa 4: linkar o projeto com o backend e serviços externos
 - [ ] Tarefa 5: finalizar o sistema e realizar testes finais
 
 # 💻 Pré-requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Você instalou a versão mais recente do Xaamp e do Php
+
 Você possui uma máquina com um dos seguintes sistemas operacionais: <Windows / Linux / macOS>
+
 Você leu a documentação oficial do php para entender a estrutura do projeto.
 
 🚀 Instalando Flex Food
@@ -27,18 +29,26 @@ Linux e macOS:
 
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
+
 Abra o php my admin
+
 Crie um banco de dados
+
 Importe o banco de dados da pasta
+
 Abra  seu navegador e pesquise localhost/nomedoprojeto
 
 Windows:
 
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
+
 Abra o php my admin
+
 Crie um banco de dados com o mesmo nome do projeto
+
 Importe o banco de dados da pasta do projeto 
+
 Abra  seu navegador e pesquise localhost/nomedoprojeto
 
 # Tecnologias Utilizadas 👨‍💻
