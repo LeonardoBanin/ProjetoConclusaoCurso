@@ -1,6 +1,6 @@
 # **Flex Food**
 
-<img src="img/LogoFundo.jpeg" width="600px;" alt="Flex Food">
+<img src="./flexfood/img/logo/1.png" width="600px;" alt="Flex Food">
 
 Flex Food é um sistema de cantina online, desenvolvido para facilitar a compra de lanches em escolas e universidades, permitindo pedidos antecipados via aplicativo e retirada sem filas. O projeto tem como objetivo aumentar a eficiência e a satisfação dos usuários.
 
@@ -16,9 +16,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 # 💻 Pré-requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-Você instalou a versão mais recente de Node.js e React.js
+Você instalou a versão mais recente do Xaamp e do Php
 Você possui uma máquina com um dos seguintes sistemas operacionais: <Windows / Linux / macOS>
-Você leu a documentação oficial do React.js e Node.js para entender a estrutura do projeto.
+Você leu a documentação oficial do php para entender a estrutura do projeto.
 
 🚀 Instalando Flex Food
 Para instalar o Flex Food, siga estas etapas:
@@ -27,17 +27,19 @@ Linux e macOS:
 
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
-cd flex-food
-npm install
-npm start
+Abra o php my admin
+Crie um banco de dados
+Importe o banco de dados da pasta
+Abra  seu navegador e pesquise localhost/nomedoprojeto
 
 Windows:
 
 Copiar código
 git clone https://github.com/seu-repositorio/flex-food.git
-cd flex-food
-npm install
-npm start
+Abra o php my admin
+Crie um banco de dados com o mesmo nome do projeto
+Importe o banco de dados da pasta do projeto 
+Abra  seu navegador e pesquise localhost/nomedoprojeto
 
 # Tecnologias Utilizadas 👨‍💻
 
@@ -51,6 +53,9 @@ npm start
 
 - **JavaScript**  
   ![JavaScript](https://cdn-icons-png.flaticon.com/512/5968/5968292.png)
+
+  **Php**  
+  ![Php](https://www.site.pt/wp-content/uploads/2022/01/o-que-e-php-845x480.jpg)
 
 - **AppGyver**  
   ![AppGyver](img/App%20giver.png)
