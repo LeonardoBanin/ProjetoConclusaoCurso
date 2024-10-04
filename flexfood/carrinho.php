@@ -187,8 +187,6 @@ if (!file_exists("carrinho_info/carrinho_" . $_SESSION["email"] . ".txt")) {
 
                                 ?>
 
-                                <button type="button" class="mt-3 btn btn-outline-danger">FINALIZAR COMPRA</button>
-
                                 <?php
                             }
                             ?>
