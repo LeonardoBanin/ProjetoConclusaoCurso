@@ -81,8 +81,8 @@ include_once("templates/header.php");
     <div class="row">
       <div class="col-12 col-md-8">
         <p class="primary-color offer-subtitle"></p>
-        <h2 class="light-color">QUEIMA DE ESTOQUE</h2>
-        <p class="secondary-color">Os melhores periféricos do mercado para você com desconto de até 75%</p>
+        <h2 class="light-color">Promoção</h2>
+        <p class="secondary-color">Os melhores laches da cantina para você com desconto de até 50%</p>
         <a href="#" class="btn btn-primary">Comprar agora</a>
       </div>
       <div class="col-12 col-md-4">
@@ -94,12 +94,12 @@ include_once("templates/header.php");
   <!-- PRODUTOS -->
 
   <div class="container" id="products">
-    <h2 class="title primary-color">Produtos</h2>
+    <h2 class="title primary-color">Cantina</h2>
     <div class="row">
       <div class="col-12 col-md-3 d-none d-md-flex" id="products-banner">
         <img src="" alt="">
         <p class="secondary-color">Os melhores</p>
-        <h3>PRODUTOS</h3>
+        <h3>Lanches</h3>
         <p class="primary-color">com os melhores preços</p>
       </div>
       <div class="col-12 col-md-9">

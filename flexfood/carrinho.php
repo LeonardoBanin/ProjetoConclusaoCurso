@@ -164,6 +164,7 @@ if (!file_exists("carrinho_info/carrinho_" . $_SESSION["email"] . ".txt")) {
 
                                                 <input type='hidden' name='product_id' value="'<?= $row['id'] ?>'">
                                                 <input class="btn btn-primary" type='submit' value='Remover do carrinho'>
+                                                <button type="button" class="mt-3 btn btn-outline-danger">FINALIZAR COMPRA</button>
 
                                             </div>
                                         </div>
@@ -204,7 +205,7 @@ if (!file_exists("carrinho_info/carrinho_" . $_SESSION["email"] . ".txt")) {
 
                             <div class="cart-card-body">
                                 <h5 class="">
-                                    Nenhum produto aqui... por enquanto ;)
+                                    Nenhum produto aqui... por enquanto ;
                                 </h5>
                             </div>
                         </div>

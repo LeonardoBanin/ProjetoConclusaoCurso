@@ -49,7 +49,7 @@
             <div class="col-12 col-md-4 footer-column" id="footer-center">
                 <h3>FlexFood</h3>
                 <p class="secondary-color">Alguma dúvida? Ligue para nós</p>
-                <p class="store-phone"><i class="bi bi-telephone"></i> (11)99999-9999</p>
+                <p class="store-phone"><i class="bi bi-telephone"></i> (11) 98765-4321</p>
             </div>
             <!-- Coluna para os links de informações adicionais -->
             <div class="col-12 col-md-4 footer-column">

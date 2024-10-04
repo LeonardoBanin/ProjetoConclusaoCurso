@@ -70,7 +70,7 @@ $_SESSION['code_has_run'] = null;
                     <?= $ProdId["preco"] ?>
                 </p>
                 <!-- PARCELAS POSSIVEIS PARA O PRODUTO (O BOOTSTRAP NAO ESTA FUNCIONANDO)-->
-                <p class="sem_juros">
+                <!-- <p class="sem_juros">
                     Até 8x sem juros
                 <div class="btn-group">
                     <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown"
@@ -92,11 +92,11 @@ $_SESSION['code_has_run'] = null;
                         <li><a class="dropdown-item" href="#">Separated link</a></li>
                     </ul>
                 </div>
-                </p>
+                </p> -->
 
                 <br><br>
                 <!-- CEP -->
-                <div class="cep_enviar">
+                <!-- <div class="cep_enviar">
                     <div class="texto_cep">
                         Calcular frete e entrega
                         <div class="input-group mb-3">
@@ -104,7 +104,7 @@ $_SESSION['code_has_run'] = null;
                                     <input type="text" class="form-control" placeholder=""
                                         aria-label="Example text with button addon" aria-describedby="button-addon1">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ENVIAR -->
                     <div>
                         <a id="enviar" class="btn btn-outline-danger" style="width:250px;"

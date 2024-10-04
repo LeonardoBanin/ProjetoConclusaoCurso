@@ -21,15 +21,15 @@ body {
 }
 
 .secondary-bg-color {
-  background-color: #D92020;
+  background-color: #ff0000;
 }
 
 .light-bg-color {
-  background-color: #b21d1d;
+  background-color: #ff0000;
 }
 
 .dark-bg-color {
-  background-color: #101010;
+  background-color: #ff0000;
 }
 
 /* cores das fontes, links */
@@ -38,7 +38,7 @@ body {
 }
 
 .secondary-color {
-  color: red;
+  color: rgb(255, 255, 255);
 }
 
 .light-color {
@@ -308,7 +308,7 @@ body {
 
 /* Estilos específicos para o hover do primeiro mini-banner */
 #mini-banners #mini-banner-1 a:hover {
-  color: #D92020;
+  color: #000000;
 }
 
 #mini-banners #mini-banner-3 a {
@@ -316,7 +316,7 @@ body {
 }
 
 #mini-banners #mini-banner-3 a:hover {
-  color: #fff;
+  color: #000000;
 }
 
 /* BEST SELLERS - Mais vendidos */
