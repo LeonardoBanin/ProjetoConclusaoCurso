@@ -2,13 +2,10 @@
 include_once("templates/header.php");
 ?>
 
-
 <video class="container-fluid" src="img/videos/video fundo site.mp4" muted autoplay loop width="min-content"></video>
 
 <!-- Banner principal -->
 <div class="container" id="banners-container">
-
-
   <div class="container" id="mini-banners">
     <div class="row justify-content-around">
       <div class="col-12 dark-bg-color" id="mini-banner-1">
@@ -31,28 +28,19 @@ include_once("templates/header.php");
 </div>
 
 <!-- BEST SELLERS -->
-
 <div class="container" id="best-sellers">
   <h2 class="title primary-color">Mais Pedidos</h2>
   <div class="row">
-
     <?php
-
     $count = 0;
-
     $stmt = $conn->prepare("SELECT * FROM produtos");
-
     $stmt->execute();
-
     ?>
-
     <?php foreach ($stmt as $produtos): ?>
-
       <?php if ($count < 4): ?>
-
         <div class="col-12 col-md-3">
           <div class="card primary-bg-color">
-            <img src="img/products/<?= $produtos["image"] ?>" class="card-img-top img-fluid" alt="Relógio 1">
+            <img src="img/products/<?= $produtos["image"] ?>" class="card-img-top img-fluid" alt="Relógio 1" <?php if ($count == 2) echo 'id="produto-3"'; ?>>
             <div class="card-body">
               <p class="card-category secondary-color">
                 <?= $produtos["category"] ?>
@@ -67,32 +55,26 @@ include_once("templates/header.php");
             </div>
           </div>
         </div>
-
         <?php $count++; ?>
-
       <?php endif; ?>
-
     <?php endforeach; ?>
   </div>
 
   <!-- BANNER DESTAQUE -->
-
   <div class="container-fluid" id="bottom-banner">
-    <div class="row" id="foto-banner">
+    <div class="row">
       <div class="col-12 col-md-8">
         <p class="primary-color offer-subtitle"></p>
         <h2 class="light-color">Promoção</h2>
-        <p class="secondary-color">Os melhores laches da cantina para você com desconto de até 50%</p>
-        <a href="#" class="btn btn-primary">Comprar agora</a>
-        <!-- </div> -->
-        <!-- <div class="col-12 col-md-4"> -->
+        <p class="secondary-color">Os melhores lanches da cantina para você com desconto de até 50%</p>
+      </div>
+      <div class="col-12 col-md-4" id="promo-banner-img">
         <img src="img/banners/banner2.jpeg" alt="Banner">
       </div>
     </div>
   </div>
 
   <!-- PRODUTOS -->
-
   <div class="container" id="products">
     <h2 class="title primary-color">Cantina</h2>
     <div class="row">
@@ -104,23 +86,14 @@ include_once("templates/header.php");
       </div>
       <div class="col-12 col-md-9">
         <div class="row">
-
           <?php
-
           $count = 0;
-
           $stmt = $conn->prepare("SELECT * FROM produtos");
-
           $stmt->execute();
-
           ?>
-
           <?php foreach ($stmt as $produtos): ?>
-
             <?php if ($count < 12): ?>
-
               <?php $count++; ?>
-
               <div class="col-12 col-md-4">
                 <div class="card primary-bg-color">
                   <img src="img/products/<?= $produtos["image"] ?>" class="card-img-top img-fluid" alt="Relógio">
@@ -138,9 +111,7 @@ include_once("templates/header.php");
                   </div>
                 </div>
               </div>
-
             <?php endif; ?>
-
           <?php endforeach; ?>
         </div>
       </div>

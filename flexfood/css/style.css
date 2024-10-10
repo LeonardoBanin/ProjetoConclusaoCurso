@@ -328,6 +328,7 @@ body {
 #best-sellers {
   /* espaçamento em superios e inferior da sessão */
   padding: 4em;
+  
 }
 
 #best-sellers .row {
@@ -336,7 +337,12 @@ body {
 
 #best-sellers .col-md-3 {
   padding: 0;
+  
 }
+#best-sellers .card {
+  margin-bottom: 20px;
+}
+
 
 /* Estilos para elementos com a classe .title */
 .title {
@@ -410,22 +416,31 @@ body {
 }
 
 /* Banner destaque */
-#bottom-banner {
-  background-color: #ffffff2c;
+#promo-banner-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
 
-  padding: 6em;
+#promo-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#bottom-banner {
+  padding: 0;
   margin-bottom: 4em;
   text-align: center;
 }
 
-#foto-banner img {
-  background-image: url(/flexfood/img/banners/banner2.jpeg);
-  background-repeat: no-repeat;
-  max-width: 100%;
-}
-
-#bottom-banner .offer-subtitle,
-#bottom-banner h2 {
+#bottom-banner .offer-subtitle, #bottom-banner h2 {
+  position: relative;
+  z-index: 10;
+  color: #FFF;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -434,14 +449,18 @@ body {
   margin: 2em;
   font-weight: bold;
   padding: 1em;
+  z-index: 10;
+  position: relative;
 }
-
 
 @media(min-width: 768px) {
   #bottom-banner h2 {
     font-size: 6em;
   }
 }
+
+
+
 
 /* Estilos para a seção de PRODUTOS */
 #products {
@@ -489,6 +508,27 @@ body {
   margin: 2em auto;
   /* Margens superior e inferior automáticas e margem lateral 2em */
 }
+
+/* Ajusta a imagem do Produto 3 */
+#produto-3 img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+  max-width: 200px; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Garantindo que todos os produtos estejam alinhados corretamente */
+.produtos-mais-pedidos {
+  display: flex; /* Alinha os produtos horizontalmente */
+  flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas, se necessário */
+  justify-content: space-between; /* Distribui o espaço entre os produtos */
+}
+
+.produto {
+  flex: 1 1 30%; /* Cada produto ocupa 30% da largura do contêiner */
+  box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+  margin: 10px; /* Espaço entre os produtos */
+}
+
 
 
 /* Galeria */
