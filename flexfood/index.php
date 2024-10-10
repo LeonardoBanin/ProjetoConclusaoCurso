@@ -78,15 +78,15 @@ include_once("templates/header.php");
   <!-- BANNER DESTAQUE -->
 
   <div class="container-fluid" id="bottom-banner">
-    <div class="row">
+    <div class="row" id="foto-banner">
       <div class="col-12 col-md-8">
         <p class="primary-color offer-subtitle"></p>
         <h2 class="light-color">Promoção</h2>
         <p class="secondary-color">Os melhores laches da cantina para você com desconto de até 50%</p>
         <a href="#" class="btn btn-primary">Comprar agora</a>
-      </div>
-      <div class="col-12 col-md-4">
-        <img src="img/products/produto (6).png" alt="Relógio 6">
+        <!-- </div> -->
+        <!-- <div class="col-12 col-md-4"> -->
+        <img src="img/banners/banner2.jpeg" alt="Banner">
       </div>
     </div>
   </div>
@@ -97,7 +97,7 @@ include_once("templates/header.php");
     <h2 class="title primary-color">Cantina</h2>
     <div class="row">
       <div class="col-12 col-md-3 d-none d-md-flex" id="products-banner">
-        <img src="" alt="">
+        <img src="./img/favicon.png" alt="">
         <p class="secondary-color">Os melhores</p>
         <h3>Lanches</h3>
         <p class="primary-color">com os melhores preços</p>
@@ -117,7 +117,7 @@ include_once("templates/header.php");
 
           <?php foreach ($stmt as $produtos): ?>
 
-            <?php if ($count < 8): ?>
+            <?php if ($count < 12): ?>
 
               <?php $count++; ?>
 
@@ -126,7 +126,7 @@ include_once("templates/header.php");
                   <img src="img/products/<?= $produtos["image"] ?>" class="card-img-top img-fluid" alt="Relógio">
                   <div class="card-body">
                     <p class="card-category">
-                      <?= $produtos["category"] ?>
+                      <?= $produtos["category"] ?>  
                     </p>
                     <h5 class="card-title white-color">
                       <?= $produtos["name"] ?>

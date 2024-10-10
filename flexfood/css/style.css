@@ -58,6 +58,9 @@ body {
   text-align: center;
 }
 
+
+  
+
 .msg.error {
   color: #842029;
   background-color: #F8D7DA;
@@ -248,6 +251,8 @@ body {
   }
 }
 
+
+
 /* MINI BANNERS */
 #mini-banners {
   margin-top: -3em;
@@ -406,10 +411,17 @@ body {
 
 /* Banner destaque */
 #bottom-banner {
-  background-color: #101010;
+  background-color: #ffffff2c;
+
   padding: 6em;
   margin-bottom: 4em;
   text-align: center;
+}
+
+#foto-banner img {
+  background-image: url(/flexfood/img/banners/banner2.jpeg);
+  background-repeat: no-repeat;
+  max-width: 100%;
 }
 
 #bottom-banner .offer-subtitle,
@@ -424,9 +436,6 @@ body {
   padding: 1em;
 }
 
-#bottom-banner img {
-  max-width: 200px;
-}
 
 @media(min-width: 768px) {
   #bottom-banner h2 {
