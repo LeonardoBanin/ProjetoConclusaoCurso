@@ -465,6 +465,7 @@ body {
 /* Estilos para a seção de PRODUTOS */
 #products {
   margin-bottom: 5rem;
+  
   /* Margem inferior de 5rem */
 }
 
@@ -478,7 +479,9 @@ body {
   /* Centralizar verticalmente */
   align-items: center;
   /* Centralizar horizontalmente */
-  background-color: #101010;
+  background-image: url('/flexfood/img/banners/banner3.jpeg');
+ 
+
   /* Cor de fundo */
 }
 

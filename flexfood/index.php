@@ -79,12 +79,13 @@ include_once("templates/header.php");
     <h2 class="title primary-color">Cantina</h2>
     <div class="row">
       <div class="col-12 col-md-3 d-none d-md-flex" id="products-banner">
-        <img src="./img/favicon.png" alt="">
-        <p class="secondary-color">Os melhores</p>
+        <img src="img/banners/banner3.png" alt="">
+        <br><br>
+        <!-- <p class="secondary-color">Os melhores</p>
         <h3>Lanches</h3>
-        <p class="primary-color">com os melhores preços</p>
+        <p class="primary-color">com os melhores preços</p> -->
       </div>
-      <div class="col-12 col-md-9">
+      <div class="col-12 col-md-9 p-5">
         <div class="row">
           <?php
           $count = 0;
