@@ -530,6 +530,52 @@ body {
 }
 
 
+.payment-approved {
+  border: 2px solid #ffffff; /* Cor azul principal */
+  border-radius: 8px;
+  background-color: #891a1a; /* Fundo azul claro */
+  color: #ffffff; /* Cor de texto azul escuro */
+  padding: 20px;
+}
+
+/* Estilo do código */
+.payment-approved .code {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em; /* Espaçamento entre letras */
+  margin-top: 15px;
+  color: #ffffff; /* Cor de texto azul escuro */
+}
+
+/* Estilo do botão */
+.button-container .btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #ff0000; /* Azul principal */
+  color: #fff; /* Cor branca no texto */
+  border: none;
+}
+
+.button-container .btn:hover {
+  background-color: #920c0c; /* Azul mais escuro para hover */
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 576px) {
+  .payment-approved p {
+      font-size: 1rem;
+  }
+
+  .payment-approved .code {
+      font-size: 1.2rem;
+  }
+
+  .button-container .btn {
+      font-size: 1rem;
+      padding: 8px 20px;
+  }
+}
+
 
 /* Galeria */
 #gallery .image-container {
