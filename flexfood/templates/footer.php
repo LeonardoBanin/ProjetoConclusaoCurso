@@ -55,9 +55,10 @@
             <div class="col-12 col-md-4 footer-column">
                 <h3>Informações</h3>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#" class="secondary-color">Política de Privacidade</a></li>
-                    <li class="mb-2"><a href="#" class="secondary-color">Sobre nós</a></li>
-                    <li class="mb-2"><a href="#" class="secondary-color">Feedback</a></li>
+                <li class="mb-2"><a href="<?=$BASE_URL ?>politica_privacidade.php" class="secondary-color">Política de Privacidade</a></li>
+                <li class="mb-2"><a href="<?=$BASE_URL ?>sobre_nos.php" class="secondary-color">Sobre nós</a></li>
+                <li class="mb-2"><a href="<?=$BASE_URL ?>feedback.php" class="secondary-color">Feedback</a></li>
+
                 </ul>
             </div>
         </div>
