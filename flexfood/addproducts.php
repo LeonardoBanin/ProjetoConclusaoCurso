@@ -34,7 +34,7 @@ require_once("models/message.php");
             <div class="col-md-6 mb-3 mt-3">
                 <label for="description">Descrição</label>
                 <textarea class="form-control" id="description" name="description"
-                    placeholder="Com catupry"></textarea>
+                    placeholder="Com catupiry"></textarea>
             </div>
 
             <div class="mb-3 mt-3">
