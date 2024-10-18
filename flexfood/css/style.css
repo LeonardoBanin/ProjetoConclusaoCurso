@@ -963,7 +963,465 @@ body {
 
   background-color: #D92020;
   color: #fff;
+  @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
 
+  /* Estilo de todos os elementos */
+  * {
+    font-family: 'Chivo', sans-serif;
+  }
+  
+  /* cor de fundo e do texto */
+  body {
+    background-color: #232323;
+    color: #FFF;
+  }
+  
+  .white-color {
+    color: #fff;
+  }
+  
+  /* cores do background */
+  .primary-bg-color {
+    background-color: #232323;
+  }
+  
+  .secondary-bg-color {
+    background-color: #ff0000;
+  }
+  
+  .light-bg-color {
+    background-color: #ff0000;
+  }
+  
+  .dark-bg-color {
+    background-color: #ff0000;
+  }
+  
+  /* cores das fontes, links */
+  .primary-color {
+    color: red;
+  }
+  
+  .secondary-color {
+    color: rgb(255, 255, 255);
+  }
+  
+  .light-color {
+    color: red;
+  }
+  
+  .msg-container {
+    background-color: #000;
+    padding: 15px;
+  }
+  
+  .msg {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #000;
+    text-align: center;
+  }
+  
+  .msg.error {
+    color: #842029;
+    background-color: #F8D7DA;
+    border-color: #F5C2C7;
+  }
+  
+  .msg.success {
+    color: #D92020;
+    background-color: #D1E7DD;
+    border-color: #BADBCC;
+  }
+  
+  /* estilizando a navbar */
+  #navbar .navbar-nav {
+    flex-direction: row;
+    /* move os itens para a direita */
+    justify-content: flex-end;
+  }
+  
+  /* itens da navbar */
+  #navbar .navbar-nav li {
+    margin-left: 1em;
+  }
+  
+  /* links e botão */
+  #navbar a,
+  #navbar button {
+    color: #FFF;
+  }
+  
+  /* posição relativa para poder usar o 'span' */
+  #navbar li {
+    position: relative;
+  }
+  
+  #navbar i {
+    font-size: 20px;
+  }
+  
+  /* icone que mostra a quantidade */
+  #navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EF3636;
+    text-align: center;
+  }
+  
+  /* espaçmento para o 'span' não ficar em cima do preço */
+  #cart-item span {
+    left: 20px;
+  }
+  
+  #form-container .form-control {
+    /* retira as bordas que vem do Bootstrap */
+    border: none;
+    /* adiciona borda inferior */
+    border-bottom: 1px solid #CCC;
+    border-radius: 0;
+  }
+  
+  #form-container .form-control:focus {
+    box-shadow: none;
+  }
+  
+  /* mobile */
+  .navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #navbar-items {
+    justify-content: space-between;
+  }
+  
+  #search-form,
+  #news-form {
+    width: 100%;
+    margin: 2em 0;
+  }
+  
+  .bi-search {
+    margin-top: 15px;
+    color: rgb(255, 0, 0);
+  }
+  
+  .navbar-brand img {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* para desktop */
+  @media(min-width: 768px) {
+    .navbar-brand {
+      text-align: left;
+    }
+  
+    #navbar-items {
+      display: flex;
+      min-width: 80%;
+    }
+  
+    #search-form,
+    #news-form {
+      width: 50%;
+      margin: 0;
+    }
+  }
+  
+  /* borda e espaçamento */
+  #search-form,
+  #news-form {
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+  
+  #search-form input,
+  #news-form input {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+  }
+  
+  /* tirando o focus azul */
+  #search-form input:focus,
+  #news-form input:focus {
+    box-shadow: none;
+  }
+  
+  #search-form input::placeholder,
+  #news-form input::placeholder {
+    color: #FFF;
+  }
+  
+  /* Segunda navbar */
+  #bottom-navbar-container .container {
+    justify-content: flex-end;
+  }
+  
+  #bottom-navbar-container a {
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .navbar-toggler {
+    font-size: 1.5em;
+  }
+  
+  /* BANNERS */
+  #banners-container {
+    padding: 0;
+  }
+  
+  .carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.8em;
+  }
+  
+  @media(min-width: 768px) {
+  
+    #slider .carousel-item,
+    #slider img {
+      height: 600px;
+    }
+  
+    .carousel-caption {
+      left: 23%;
+      right: 23%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+  }
+  
+  /* MINI BANNERS */
+  #mini-banners {
+    margin-top: -3em;
+    z-index: 10;
+  }
+  
+  #mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  @media(min-width: 768px) {
+    #mini-banners .col-12 {
+      max-width: 30%;
+    }
+  }
+  
+  #mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  
+  #mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  
+  #mini-banners .col-12 a {
+    font-weight: bold;
+    color: #FFF;
+    font-size: .8rem;
+    transition: .5s;
+  }
+  
+  #mini-banners .col-12 a:hover {
+    color: #101010;
+  }
+  
+  /* BEST SELLERS - Mais vendidos */
+  #best-sellers {
+    padding: 4em;
+  }
+  
+  #best-sellers .row {
+    margin: 0;
+  }
+  
+  #best-sellers .col-md-3 {
+    padding: 0;
+  }
+  
+  #best-sellers .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para elementos com a classe .title */
+  .title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  @media(min-width: 768px) {
+    .title {
+      text-align: left;
+    }
+  }
+  
+  .card {
+    text-align: center;
+    border-radius: 0;
+    min-height: 300px;
+  }
+  
+  .card img {
+    min-width: 140px;
+    margin: 2em auto;
+  }
+  
+  .card .card-category {
+    font-size: .8rem;
+  }
+  
+  .card .card-text {
+    margin: 2em;
+    font-weight: bold;
+  }
+  
+  /* Banner destaque */
+  #promo-banner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  #promo-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #bottom-banner {
+    padding: 0;
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  
+  #bottom-banner .offer-subtitle, 
+  #bottom-banner h2 {
+    position: relative;
+    z-index: 10;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+    z-index: 10;
+    position: relative;
+  }
+  
+  @media(min-width: 768px) {
+    #bottom-banner h2 {
+      font-size: 6em;
+    }
+  }
+  
+  /* Estilos para a seção de PRODUTOS */
+  #products {
+    margin-bottom: 5rem;
+  }
+  
+  #products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/flexfood/img/banners/banner3.jpeg');
+  }
+  
+  #products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  #products .col-md-4 {
+    padding: 0;
+  }
+  
+  #products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+  }
+  
+  #produto-3 img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .produtos-mais-pedidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .produto {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  .payment-approved {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #891a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .payment-approved h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-approved p {
+    font-size: 16px;
+  }
+  
   align-self: flex-end;
 }
 
@@ -978,115 +1436,3 @@ body {
   text-align: center;
 }
 
-
-/* ======================= */
-/*        RESPONSIVO       */
-/* ======================= */
-
-/* Responsividade para telas menores que 1200px */
-@media (max-width: 1200px) {
-  .product {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .product img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .cart-item {
-    flex-direction: column;
-  }
-
-  .cart-item img {
-    width: 50px;
-    height: 50px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-  }
-}
-
-/* Responsividade para tablets (768px ou menor) */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
-
-  .product-info {
-    padding: 0;
-  }
-
-  .product img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .cart-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .checkout-btn {
-    width: 100%;
-    padding: 15px;
-  }
-
-  #footer .footer-column {
-    padding: 1em;
-  }
-
-  #footer .footer-column h3 {
-    font-size: 1.2em;
-  }
-}
-
-/* Responsividade para celulares (480px ou menor) */
-@media (max-width: 480px) {
-  .navbar ul {
-    padding: 0;
-  }
-
-  .navbar ul li {
-    margin: 5px 0;
-  }
-
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .product img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .cart-item-info {
-    padding: 0 10px;
-  }
-
-  .checkout-btn {
-    width: 100%;
-    font-size: 1em;
-    padding: 10px 0;
-  }
-
-  .cart-item img {
-    width: 50px;
-    height: 50px;
-  }
-
-  #footer {
-    padding: 20px 0;
-  }
-
-  #footer .footer-column h3 {
-    font-size: 1.1em;
-  }
-
-  #footer .footer-column .social-icons i {
-    font-size: 1.3em;
-  }
-}
