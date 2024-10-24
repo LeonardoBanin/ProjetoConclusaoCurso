@@ -79,7 +79,7 @@ $userData = $userController->verifyToken(false);
                 </a>
               </li>
 
-              <?php if ($_SESSION["email"] === "leonardobanin@gmail.com"): ?>
+              <?php if ($_SESSION["email"] === "olerianoleonardo@gmail.com"): ?>
                 <li class="nav-item">
                   <a href="<?= $BASE_URL ?>addproducts.php" class="nav-link bold"><i class="bi bi-bag-plus"></i>
                     newprod
