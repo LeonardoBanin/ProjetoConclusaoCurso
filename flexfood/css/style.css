@@ -255,7 +255,7 @@ body {
 
 /* MINI BANNERS */
 #mini-banners {
-  margin-top: -3em;
+  margin-top: 5em;
   /* Deslocamento negativo para ajustar o posicionamento vertical */
   z-index: 10;
   /* Define a ordem de empilhamento na renderização */
@@ -563,21 +563,88 @@ body {
   background-color: #920c0c; /* Azul mais escuro para hover */
 }
 
-/* Estilo responsivo para telas menores */
+/* Estilo para telas pequenas (celulares) */
 @media (max-width: 576px) {
-  .payment-approved p {
-      font-size: 1rem;
+    /* Ajuste geral do container principal */
+    #container_primario {
+        padding:  10px;
+    }
+
+       /* Ocultar as colunas laterais de imagens */
+       #coluna_side, .div_side {
+        display: none;
+    }
+
+    
+/* Estilo para dispositivos móveis */
+@media (max-width: 576px) {
+  /* Ocultar a coluna lateral com as imagens adicionais */
+  #container_primario .coluna_side, .div_side .img_side {
+      display: none;
+      
   }
 
-  .payment-approved .code {
-      font-size: 1.2rem;
+  /* Centralizar e ajustar o tamanho da imagem principal */
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
+ 
 
-  .button-container .btn {
-      font-size: 1rem;
-      padding: 8px 20px;
+  #container_primario{
+    margin: 0 auto;
+    padding: 10px;
   }
 }
+
+/*    NAO MECHER ESTA CERTO */
+    /* Informações do produto */
+    .texto {
+        text-align: center;
+        font-size: 1rem;
+        
+    }
+
+    .nome_produto {
+        font-size: 1.2rem;
+    }
+
+    .desconto, .preco {
+        font-size: 1rem;
+    }
+
+    /* Botão de adicionar ao carrinho */
+    #enviar {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Produtos recomendados (Você também pode gostar) */
+    .secundaria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .produto {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .produto img {
+        width: 80%;
+        height: auto;
+    }
+
+    .preco_secundario {
+        font-size: 1rem;
+    }
+}
+
 
 
 /* Galeria */
@@ -637,7 +704,10 @@ body {
   /* Centralizar horizontalmente */
   text-align: center;
   /* Alinhamento de texto central */
+  
 }
+
+
 
 /* Estilos para as colunas do rodapé em telas com largura mínima de 768px */
 @media(min-width: 768px) {
@@ -1435,4 +1505,7 @@ body {
 
   text-align: center;
 }
+
+
+
 

@@ -11,7 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Tarefa 2: realizar o levantamento de requisitos do projeto
 - [x] Tarefa 3: desenvolvimento das páginas do sistema
 - [x] Tarefa 4: linkar o projeto com o backend e serviços externos
-- [ ] Tarefa 5: finalizar o sistema e realizar testes finais
+- [x] Tarefa 5: finalizar o sistema e realizar testes finais
 
 # 💻 Pré-requisitos
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
@@ -61,14 +61,23 @@ Abra  seu navegador e pesquise localhost/nomedoprojeto
 - **CSS**  
   ![CSS](https://cdn-icons-png.flaticon.com/512/732/732190.png)
 
--  **Php**  
+- **JavaScript**  
+  ![JavaScript](https://cdn-icons-png.flaticon.com/512/5968/5968292.png)
+
+  **Php**  
   ![Php](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/800px-PHP-logo.svg.png)
+
+- **AppGyver**  
+  ![AppGyver](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJnepm-tr5AYZmpbwVNnRHWPFv2ggZMuELw&sg)
 
 - **Canva**  
   ![Canva](https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ)
 
 - **Word**  
   ![Word](https://files.tecnoblog.net/wp-content/uploads/2016/07/word-700x438.jpg)
+
+  - **Bootstrap**  
+  ![Bootstrap](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfqwnOIkb9q-b1M5qgAtaBhfUzkinUA2MSuA&s)
 
 # 🤝 Time SCRUM
 Aqui está a equipe que desenvolveu este projeto:

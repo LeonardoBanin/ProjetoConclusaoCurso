@@ -11,17 +11,17 @@ include_once("templates/header.php");
       <div class="col-12 dark-bg-color" id="mini-banner-1">
         <h2>Bebidas</h2>
         <img src="img/products/produto (1).png" alt="Relógio 1">
-        <a href="#">Compre Agora</a>
+        <a href='carrinho.php'>Compre Agora</a>
       </div>
       <div class="col-12 secondary-bg-color" id="mini-banner-2">
         <h2>Salgados</h2>
         <img src="img/products/produto (2).png" alt="Relógio 2">
-        <a href="#">Compre Agora</a>
+        <a href='carrinho.php'>Compre Agora</a>
       </div>
       <div class="col-12 light-bg-color" id="mini-banner-3">
         <h2 class="secondary-color">Outros</h2>
         <img src="img/products/produto (3).png" alt="Relógio 3">
-        <a href="#">Compre Agora</a>
+        <a href='carrinho.php'>Compre Agora</a>
       </div>
     </div>
   </div>
@@ -79,7 +79,7 @@ include_once("templates/header.php");
     <h2 class="title primary-color">Cantina</h2>
     <div class="row">
       <div class="col-12 col-md-3 d-none d-md-flex" id="products-banner">
-        <img src="img/banners/banner3.png" alt="">
+        <img src="img/banners/banner3.jpeg" alt="">
         <br><br>
         <!-- <p class="secondary-color">Os melhores</p>
         <h3>Lanches</h3>
