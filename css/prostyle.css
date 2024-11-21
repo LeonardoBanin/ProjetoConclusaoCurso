@@ -1,0 +1,532 @@
+
+/* SEARCH DO SITE (COLOQUEI EM INGLÊS POIS USEI DE UM SITE DE BASE) */
+
+/* TAMANDO DO HOVER DO SITE */
+#header a:hover{
+
+  filter: opacity(65%);
+
+}
+
+
+/* FONT FAMILY GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* :root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+} */
+
+/* RESET CONFIGURAÇÕES PÁGINA */
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Staatliches', sans-serif;
+    color: #fff;
+
+}
+
+/* CONTAINER DA PRIMEIRA METADE DA TELA */
+#container_primario{
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+  height: 500px;
+  gap:50px;
+}
+/* SECTION COLUNA SIDE 1*/
+#coluna_side{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    height:400px;
+    width: 150px;
+    margin-bottom:75px;
+}
+
+/* IMAGEM DOS PRODUTOS SIDE 2*/
+.div_side{
+    display: flex;
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* IMAGEM DOS ANGULOS DOS PRODUTOS SIDE 3 */
+.img_side{
+    height:100%;
+    width:100%;
+    transition: 0.7s;
+}
+
+.img_side:hover{
+  transform: scale(110%);
+  transition: 0.7s;
+}
+
+/* DIV COM IMAGEM PRINCIPAL */
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    height:400px;
+    width:auto;
+}
+
+/* IMAGEM PRINCIPAL */
+/* .div_img_principal{
+    height:100%;
+    width:100%;
+} */
+
+#img_principal{
+    height: 100%;
+    width: 100%;
+    transition: 0.7s;
+}
+
+#img_principal:hover{
+  transform:scale(90%);
+  transition: 0.7s;
+}
+
+/* DIV INPUTS DE TAMANHO E QUANTIA */
+.inputs{
+    display: flex;
+    justify-content: center;
+    gap:70px;
+    float: left;
+}
+
+/* CONFIG TAMANHO */
+#tamanho{
+    height: 30px;
+    width:150px;
+
+}
+/* PLACEHOLDER E ESCRITA DA QUANTIA */
+#quantidade{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    color: #acacac; 
+}
+#quanti{
+    background-color: #232323;
+    color: #fff;
+    
+}
+#quanti::placeholder {
+    color: #a8a29e;
+    
+}
+
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* TEXTO DE INFORMAÇÕES SOBRE O PRODUTO PRINCIPAL */
+.nome_produto{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+
+/* PREÇO */
+.preco{
+    font-weight: bolder;
+    font-size: 50px; 
+}
+
+/* SEM JUROS */
+.sem_juros{
+    color: var(--color-neutral-30);
+    font-weight: bold;
+
+}
+
+
+/* CONTAINER CEP ENVIAR */
+.cep_enviar{
+    display: flex;
+    gap:50px;
+}
+
+/* TEXTO CEP */
+.texto_cep{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size:16px;
+
+}
+/* CEP */
+#cep{
+    padding-left: 5px;
+    height:40px;
+    width: 150px;
+
+}
+
+/* ENVIAR */
+#enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size:19px;
+    height:45px;
+    width:120px;
+    margin-top:22px;
+    transition: 0.5s;
+}
+
+#enviar:hover{
+  background-color: #D92020;
+  transition: 0.5s;
+}
+/* DIVISÃO DE TELA */
+.meia_tela{
+    width:84vw;
+    margin: auto;
+}
+
+/* TITULO SECUNDARIO */
+#titulo_secundario{
+    font-weight: bolder;
+    font-size:1.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+/* CONTAINER GERAL SECUNDÁRIO DAS CHUTEIRAS EM OFERTA */
+.secundaria{
+    display: flex;
+    justify-content: center;
+       padding:100px;
+    
+}
+
+/* PRODUTOS */
+.produto{
+    font-weight: 700;
+    border: 1 px solid black;
+    height: auto;
+    width: 340px;
+    text-align: justify;
+}
+
+/* IMAGEM DAS OFERTAS SECUNDÁRIAS */
+.produto img{
+    width:100%;
+    transition: 0.7s;
+}
+
+.produto img:hover{
+  transform: scale(110%);
+  transition: 0.7s;
+}
+
+
+.preco_secundario{
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 400px){
+  
+    .search-box:hover .search-box-input {
+        width: 360px;
+    }
+}
+
+
+/* Estilo para telas pequenas (celulares) */
+@media (max-width: 576px) {
+    /* Ajuste geral do container principal */
+    #container_primario {
+      padding:  10px;
+      gap: 0;
+    }
+  
+    /* Ocultar as colunas laterais de imagens */
+    #coluna_side, .div_side {
+      display: none !important;
+    }
+  
+    .principal .div_img_principal{
+      height: 30%;
+      width: auto;
+    }
+  
+  
+        /*    NAO MECHER ESTA CERTO */
+      /* Informações do produto */
+      .texto {
+        text-align: center;
+       
+          
+      }
+  
+      .nome_produto {
+          font-size: 1rem;
+      }
+  
+      .desconto, .preco {
+          font-size: 1rem;
+      }
+  
+      /* Botão de adicionar ao carrinho */
+      #enviar {
+          width: 100%;
+          padding: 10px;
+          font-size: 1rem;
+      }
+  
+      /* Produtos recomendados (Você também pode gostar) */
+      .secundaria {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+      }
+  
+      .produto {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+      }
+  
+      .produto img {
+          width: 80%;
+          height: auto;
+      }
+  
+      .preco_secundario {
+          font-size: 1rem;
+      }
+}
+
+@media (min-width: 0px) and (max-width:767px) {
+
+    .cart-card {
+      display: flex;
+  
+      flex-direction: column;
+  
+      height: 500px;
+  
+      color: #FFF;
+  
+      margin: 0;
+  
+      padding-top: -40px;
+      padding-bottom: 40px;
+  
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .plus-minus {
+      display: flex;
+  
+      margin-left: 25px;
+  
+      align-self: center;
+      justify-self: center;
+  
+      flex-direction: row;
+    }
+  
+    /* subtrair da quantia */
+    .plus button {
+      color: white;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      background-color: #b21d1d;
+    
+    }
+    
+    /* a quantia em sí */
+    .amount {
+      color: white;
+      height: 30px;
+      width: 30px;
+      text-align: center;
+      background-color: #b21d1d;
+    
+      padding-top: 3px;
+  
+    }
+  
+    .cart-card-body {
+      display: block;
+  
+      color: #FFF;
+  
+      flex-direction: column;
+  
+      height: auto;
+  
+      padding-top: 0px;
+      padding-bottom: 0px;
+  
+      justify-content: center;
+      align-items: center;
+  
+    }
+  
+    .navbar-brand {
+      text-align: left;
+    }
+  
+    #navbar-items {
+      display: flex;
+      min-width: 80%;
+    }
+  
+    #search-form,
+    #news-form {
+      width: 50%;
+      margin: 0;
+    }
+  
+}
+  
+
+
+/* para desktop */
+@media(min-width: 768px) {
+    .navbar-brand {
+      text-align: left;
+    }
+  
+    #navbar-items {
+      display: flex !important;
+      flex-direction: row;
+      min-width: 80%;
+    }
+  
+    #search-form,
+    #news-form {
+      width: 50%;
+      
+      align-items: center;
+      justify-content: center;
+    }
+  
+    #slider .carousel-item,
+    #slider img {
+      height: 600px;
+    }
+  
+    .carousel-caption {
+      left: 23%;
+      right: 23%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+  
+    #mini-banners .col-12 {
+      max-width: 30%;
+    }
+  
+    .title {
+      text-align: left;
+      /* Alinhamento à esquerda do texto */
+    }
+  
+    #bottom-banner h2 {
+      font-size: 6em;
+    }
+  
+    #footer .footer-column {
+      padding: 5em 2em;
+      /* Preenchimento interno */
+      
+    }
+  
+    .plus-minus {
+      display: flex;
+    
+      color: white;
+    
+      margin-bottom: 10px;
+      /* margin-top: 150px; */
+      margin-left: 25px;
+    }
+  
+    .cart-card-body {
+      display: flex;
+    
+      flex-direction: column;
+  
+      color: #FFF;
+    
+      margin-top: -100px;
+    
+      max-height: 50px;
+      margin-right: 10px;
+    
+    }
+  
+    #slider .carousel-item,
+    #slider img {
+      height: 600px;
+    }
+  
+    .carousel-caption {
+      left: 23%;
+      right: 23%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+  
+    #mini-banners .col-12 {
+      max-width: 30%;
+    }
+  
+    .title {
+      text-align: left;
+    }
+  
+    #bottom-banner h2 {
+      font-size: 6em;
+    }
+
+   
+
+    #coluna_side col{
+      width: 200px !important;
+      height: auto;
+    }
+
+    .principal{
+      width: 30%;
+      height: auto;
+      margin-left: 500px;
+      position: relative;
+    }
+
+    .div_side{
+      width: 180px;
+      height: auto;
+      position: absolute;
+      margin-left: 120px;
+    }
+}

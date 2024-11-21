@@ -1,0 +1,1220 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+/* Estilo de todos os elementos */
+* {
+  font-family: 'Chivo', sans-serif;
+}
+
+/* cor de fundo e do texto */
+body {
+  background-color: #232323;
+  color: #FFF;
+}
+
+.white-color {
+  color: #fff;
+}
+
+/* cores do background */
+.primary-bg-color {
+  background-color: #232323;
+}
+
+.secondary-bg-color {
+  background-color: #ff0000;
+}
+
+.light-bg-color {
+  background-color: #ff0000;
+}
+
+.dark-bg-color {
+  background-color: #ff0000;
+}
+
+/* cores das fontes, links */
+.primary-color {
+  color: red;
+}
+
+.secondary-color {
+  color: rgb(255, 255, 255);
+}
+
+.light-color {
+  color: red;
+}
+
+.msg-container {
+  background-color: #000;
+  padding: 15px;
+}
+
+.msg {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  border: solid 1px #000;
+  text-align: center;
+}
+
+
+  
+
+.msg.error {
+  color: #842029;
+  background-color: #F8D7DA;
+  border-color: #F5C2C7;
+}
+
+.msg.success {
+  color: #D92020;
+  background-color: #D1E7DD;
+  border-color: #BADBCC;
+}
+
+/* estilizando a navbar */
+#navbar .navbar-nav {
+  flex-direction: row;
+  /* move os itens para a direita */
+  justify-content: flex-end;
+}
+
+/* itens da navbar */
+#navbar .navbar-nav li {
+  margin-left: 1em;
+}
+
+/* links e botão */
+#navbar a,
+#navbar button {
+  color: #FFF;
+}
+
+/* posição relativa para poder usar o 'span' */
+#navbar li {
+  position: relative;
+}
+
+#navbar i {
+  font-size: 20px;
+}
+
+/* icone que mostra a quantidade */
+#navbar span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #EF3636;
+  text-align: center;
+}
+
+/* espaçmento para o 'span' não ficar em cima do preço */
+#cart-item span {
+  left: 20px;
+}
+
+#form-container .form-control {
+  /* retira as bordas que vem do Bootstrap */
+  border: none;
+  /* adiciona borda inferior */
+  border-bottom: 1px solid #CCC;
+  border-radius: 0;
+}
+
+#form-container .form-control:focus {
+  box-shadow: none;
+}
+
+
+/* mobile */
+/* .navbar-brand {
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+} */
+
+/* mobile */
+/* #navbar-items {
+  justify-content: space-between;
+} */
+
+/* mobile */
+#search-form,
+#news-form {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.bi-search{
+  margin-top: 2px;
+  color: rgb(255, 0, 0);
+}
+.navbar-brand img {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* borda e espaçamento */
+#search-form,
+#news-form {
+  border: 2px solid #626262;
+  border-radius: 3px;
+  padding: 5px 15px;
+  align-items: row;
+}
+
+#search-form input,
+#news-form input {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+
+/* tirando o focus azul */
+#search-form input:focus,
+#news-form input:focus {
+  box-shadow: none;
+}
+
+#search-form input::placeholder,
+#news-form input::placeholder {
+  color: #FFF;
+}
+
+/* Segunda navbar */
+#bottom-navbar-container .container {
+  justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+  color: #FFF;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  font-size: 1.5em;
+}
+
+/* BANNERS */
+#banners-container {
+  padding: 0;
+}
+
+.carousel-caption {
+  bottom: 5em;
+  padding: 1em;
+  left: 12%;
+  right: 12%;
+}
+
+.carousel-caption h5 {
+  font-size: 1.8em;
+}
+
+
+/* MINI BANNERS */
+#mini-banners {
+  margin-top: 5em;
+  /* Deslocamento negativo para ajustar o posicionamento vertical */
+  z-index: 10;
+  /* Define a ordem de empilhamento na renderização */
+}
+
+/* Estilos para as colunas da seção de mini-banners */
+#mini-banners .col-12 {
+  z-index: 1;
+  /* Define a ordem de empilhamento dentro das colunas */
+  height: 300px;
+  padding: 1.5em;
+  /* Espaçamento interno */
+  position: relative;
+  /* Posicionamento relativo para conter os elementos internos */
+  display: flex;
+  /* Usa flexbox para organizar elementos internos */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Estilos para os títulos h2 dentro das colunas */
+#mini-banners .col-12 h2 {
+  text-transform: uppercase;
+  max-width: 50px;
+  font-size: 2.2em;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+/* Estilos para as imagens dentro das colunas */
+#mini-banners .col-12 img {
+  height: 220px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+/* Estilos para os links dentro das colunas */
+#mini-banners .col-12 a {
+  font-weight: bold;
+  color: #FFF;
+  font-size: .8rem;
+  transition: .5s;
+}
+
+#mini-banners .col-12 a:hover {
+  color: #101010;
+}
+
+/* Estilos específicos para o hover do primeiro mini-banner */
+#mini-banners #mini-banner-1 a:hover {
+  color: #000000;
+}
+
+#mini-banners #mini-banner-3 a {
+  color: #ffffff;
+}
+
+#mini-banners #mini-banner-3 a:hover {
+  color: #000000;
+}
+
+/* BEST SELLERS - Mais vendidos */
+#best-sellers {
+  /* espaçamento em superios e inferior da sessão */
+  padding: 4em;
+  
+}
+
+#best-sellers .row {
+  margin: 0;
+}
+
+#best-sellers .col-md-3 {
+  padding: 0;
+  
+}
+#best-sellers .card {
+  margin-bottom: 20px;
+}
+
+
+/* Estilos para elementos com a classe .title */
+.title {
+  text-transform: uppercase;
+  /* Transformação de texto em maiúsculas */
+  font-weight: 900;
+  /* Peso da fonte (negrito) */
+  font-size: 2.5em;
+  /* Tamanho da fonte */
+  margin-bottom: 1em;
+  /* Espaço inferior */
+  text-align: center;
+  /* Alinhamento central do texto */
+}
+
+
+/* Estilos para elementos com a classe .card */
+.card {
+  text-align: center;
+  /* Alinhamento central do texto */
+  border-radius: 0;
+  /* Raio do canto do cartão */
+
+  min-height: 300px;
+}
+
+/* Estilos para imagens dentro de elementos .card */
+.card img {
+  /* altered value to display it more pretty */
+  min-width: 140px;
+  /* Largura da imagem */
+  margin: 2em auto;
+  /* Margens superior e inferior automáticas e margem lateral 2em */
+}
+
+/* Estilos para elementos .card-category dentro de elementos .card */
+.card .card-category {
+  font-size: .8rem;
+  /* Tamanho da fonte da categoria do cartão */
+}
+
+/* Estilos para elementos .card-text dentro de elementos .card */
+.card .card-text {
+  margin: 2em;
+  /* Margem de 2em em todas as direções */
+  font-weight: bold;
+  /* Peso da fonte em negrito */
+}
+
+/* Estilos para botões com a classe .btn */
+.btn {
+  margin: 2px;
+  background-color: transparent;
+  /* Cor de fundo transparente */
+  border-color: #D92020;
+  /* Cor da borda do botão */
+}
+
+/* Estilos para botões .btn quando hover (passando o mouse por cima) */
+.btn:hover {
+  background-color: #D92020;
+  /* Cor de fundo ao passar o mouse */
+  border-color: #D92020;
+  /* Cor da borda ao passar o mouse */
+}
+
+/* Banner destaque */
+#promo-banner-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+#promo-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#bottom-banner {
+  padding: 0;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+#bottom-banner .offer-subtitle, #bottom-banner h2 {
+  position: relative;
+  z-index: 10;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#bottom-banner .btn {
+  margin: 2em;
+  font-weight: bold;
+  padding: 1em;
+  z-index: 10;
+  position: relative;
+}
+
+
+/* Estilos para a seção de PRODUTOS */
+#products {
+  margin-bottom: 5rem;
+  
+  /* Margem inferior de 5rem */
+}
+
+/* Estilos para o banner de produtos */
+#products-banner {
+  display: flex;
+  /* Display flex */
+  flex-direction: column;
+  /* Direção de coluna */
+  justify-content: center;
+  /* Centralizar verticalmente */
+  align-items: center;
+  /* Centralizar horizontalmente */
+  background-image: url('/flexfood/img/banners/banner3.jpeg');
+ 
+
+  /* Cor de fundo */
+}
+
+/* Estilos para o título no banner de produtos */
+#products-banner h3 {
+  text-transform: uppercase;
+  /* Transformação de texto em maiúsculas */
+  font-weight: bold;
+  /* Peso da fonte (negrito) */
+  margin-bottom: 1rem;
+  /* Espaço inferior de 1rem */
+  font-size: 2.5rem;
+  /* Tamanho da fonte */
+}
+
+#products .col-md-4 {
+  padding: 0;
+  /* Remover padding */
+}
+
+/* Estilos para imagens dentro de elementos .card na seção de produtos */
+#products .card img {
+  height: 150px;
+  /* Altura da imagem */
+  width: 90px;
+  /* Largura da imagem */
+  margin: 2em auto;
+  /* Margens superior e inferior automáticas e margem lateral 2em */
+}
+
+/* Ajusta a imagem do Produto 3 */
+#produto-3 img {
+  width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner */
+  max-width: 200px; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Garantindo que todos os produtos estejam alinhados corretamente */
+.produtos-mais-pedidos {
+  display: flex; /* Alinha os produtos horizontalmente */
+  flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas, se necessário */
+  justify-content: space-between; /* Distribui o espaço entre os produtos */
+}
+
+.produto {
+  flex: 1 1 30%; /* Cada produto ocupa 30% da largura do contêiner */
+  box-sizing: border-box; /* Inclui padding e bordas no tamanho total */
+  margin: 10px; /* Espaço entre os produtos */
+}
+
+
+.payment-approved {
+  border: 2px solid #ffffff; /* Cor azul principal */
+  border-radius: 8px;
+  background-color: #891a1a; /* Fundo azul claro */
+  color: #ffffff; /* Cor de texto azul escuro */
+  padding: 20px;
+}
+
+/* Estilo do código */
+.payment-approved .code {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em; /* Espaçamento entre letras */
+  margin-top: 15px;
+  color: #ffffff; /* Cor de texto azul escuro */
+}
+
+/* Estilo do botão */
+.button-container .btn {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: #ff0000; /* Azul principal */
+  color: #fff; /* Cor branca no texto */
+  border: none;
+}
+
+.button-container .btn:hover {
+  background-color: #920c0c; /* Azul mais escuro para hover */
+}
+
+
+
+
+
+/* Galeria */
+#gallery .image-container {
+  background-size: cover;
+  background-position: center;
+  height: 225px;
+  cursor: pointer;
+  transition: .5s;
+  border: 3px solid #101010;
+}
+
+#gallery .image-container:hover {
+  border-color: #D92020;
+}
+
+#insta1 {
+  background-image: url('../img/people-product/p-highlight\ \(1\).jpeg');
+}
+
+#insta2 {
+  background-image: url('../img/people-product/p-highlight\ \(2\).jpeg');
+}
+
+#insta3 {
+  background-image: url('../img/people-product/p-highlight\ \(3\).jpeg');
+}
+
+#insta4 {
+  background-image: url('../img/people-product/p-highlight\ \(4\).jpeg');
+}
+
+#insta5 {
+  background-image: url('../img/people-product/p-highlight\ \(5\).jpeg');
+}
+
+#insta6 {
+  background-image: url('../img/people-product/p-highlight\ \(6\).jpeg');
+}
+
+/* Estilos para a SEÇÃO DE RODAPÉ */
+#footer-links-container {
+
+  border-bottom: 1px solid #626262;
+  /*Borda inferior */
+}
+
+/* Estilos para as colunas do rodapé */
+#footer .footer-column {
+  padding: 2em;
+  /* Preenchimento interno */
+  flex-direction: column;
+  /* Direção de coluna para os elementos flex */
+  align-items: center;
+  /* Centralizar verticalmente */
+  justify-content: center;
+  /* Centralizar horizontalmente */
+  text-align: center;
+  /* Alinhamento de texto central */
+  
+}
+
+/* Estilos para títulos nas colunas do rodapé */
+#footer-links-container h3 {
+  margin-bottom: 25px;
+  /* Espaço inferior */
+  text-transform: uppercase;
+  /* Transformação de texto em maiúsculas */
+}
+
+/* Estilos para itens de lista nas colunas do rodapé */
+#footer-links-container li {
+  font-size: 1em;
+  /* Tamanho da fonte */
+  text-align: center;
+  /* Alinhamento de texto central */
+}
+
+/* Estilos para links em itens de lista nas colunas do rodapé */
+#footer-links-container li a {
+  text-decoration: none;
+  /* Remover decoração de link */
+}
+
+/* Estilos para links em itens de lista quando hover (passando o mouse por cima) */
+#footer-links-container li a:hover {
+  color: #D92020;
+  /* Cor ao passar o mouse */
+}
+
+/* Estilos para a coluna do centro do rodapé */
+#footer-center {
+  border-left: 2px solid #626262;
+  /* Borda esquerda */
+  border-right: 2px solid #626262;
+  /* Borda direita */
+}
+
+/* Estilos para títulos na coluna do centro do rodapé */
+#footer-center h3 {
+  font-weight: 900;
+  /* Peso da fonte (negrito) */
+}
+
+/* Estilos para o número de telefone na coluna do centro do rodapé */
+#footer-center .store-phone {
+  color: #D92020;
+  /* Cor do número de telefone */
+  font-weight: bold;
+  /* Peso da fonte (negrito) */
+  font-size: 2rem;
+  /* Tamanho da fonte */
+  margin-top: -15px;
+  /* Margem superior negativa */
+}
+
+
+/* NEWS */
+#newsletter-container {
+  background-color: #101010;
+  border-bottom: 1px solid #626262;
+  text-align: center;
+  padding: 20px;
+}
+
+#news-form {
+  max-width: 600px;
+  margin: 15px auto;
+}
+
+#news-form i {
+  font-size: 1.5em;
+}
+
+#news-form .btn {
+  color: #FFF;
+}
+
+#social-container {
+  margin: 20px auto;
+}
+
+#social-container i {
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  color: #626262;
+  transition: .3s;
+}
+
+#social-container i:hover {
+  color: #D92020;
+}
+
+#copy-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.cart-itens-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  color: #FFF;
+}
+
+.cart-card {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  align-items: center;
+  
+  color: #FFF;
+
+  width: auto;
+
+  border-radius: 20px;
+
+  border: 2px solid #842029;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+.cart-card img {
+  max-height: 100px;
+}
+
+.plus-minus button {
+  background: transparent;
+  border: transparent;
+  color: #fff;
+}
+
+/* o preço do produto */
+.plus-minus p {
+  color: white;
+
+  font-weight: bolder;
+  font-size: 30px;
+
+  margin: 0;
+
+}
+
+/* subtrair da quantia */
+.plus button {
+  color: white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background-color: #b21d1d;
+
+}
+
+/* a quantia em sí */
+.amount {
+  color: white;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  background-color: #b21d1d;
+
+  padding-top: 3px;
+
+}
+
+.createprod-container {
+
+  margin: auto;
+
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+.createprod-container form {
+  display: flex;
+
+  flex-direction: column;
+
+  margin: auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.createprod-container form div {
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+}
+
+.createprod-container textarea {
+  height: 300px;
+}
+
+.createprod-container button {
+  max-width: 300px;
+  height: 50px;
+
+  border: 0;
+
+  background-color: #D92020;
+  color: #fff;
+  @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap');
+
+  /* Estilo de todos os elementos */
+  * {
+    font-family: 'Chivo', sans-serif;
+  }
+  
+  /* cor de fundo e do texto */
+  body {
+    background-color: #232323;
+    color: #FFF;
+  }
+  
+  .white-color {
+    color: #fff;
+  }
+  
+  /* cores do background */
+  .primary-bg-color {
+    background-color: #232323;
+  }
+  
+  .secondary-bg-color {
+    background-color: #ff0000;
+  }
+  
+  .light-bg-color {
+    background-color: #ff0000;
+  }
+  
+  .dark-bg-color {
+    background-color: #ff0000;
+  }
+  
+  /* cores das fontes, links */
+  .primary-color {
+    color: red;
+  }
+  
+  .secondary-color {
+    color: rgb(255, 255, 255);
+  }
+  
+  .light-color {
+    color: red;
+  }
+  
+  .msg-container {
+    background-color: #000;
+    padding: 15px;
+  }
+  
+  .msg {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border: solid 1px #000;
+    text-align: center;
+  }
+  
+  .msg.error {
+    color: #842029;
+    background-color: #F8D7DA;
+    border-color: #F5C2C7;
+  }
+  
+  .msg.success {
+    color: #D92020;
+    background-color: #D1E7DD;
+    border-color: #BADBCC;
+  }
+  
+  /* estilizando a navbar */
+  #navbar .navbar-nav {
+    flex-direction: row;
+    /* move os itens para a direita */
+    justify-content: flex-end;
+  }
+  
+  /* itens da navbar */
+  #navbar .navbar-nav li {
+    margin-left: 1em;
+  }
+  
+  /* links e botão */
+  #navbar a,
+  #navbar button {
+    color: #FFF;
+  }
+  
+  /* posição relativa para poder usar o 'span' */
+  #navbar li {
+    position: relative;
+  }
+  
+  #navbar i {
+    font-size: 20px;
+  }
+  
+  /* icone que mostra a quantidade */
+  #navbar span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #EF3636;
+    text-align: center;
+  }
+  
+  /* espaçmento para o 'span' não ficar em cima do preço */
+  #cart-item span {
+    left: 20px;
+  }
+  
+  #form-container .form-control {
+    /* retira as bordas que vem do Bootstrap */
+    border: none;
+    /* adiciona borda inferior */
+    border-bottom: 1px solid #CCC;
+    border-radius: 0;
+  }
+  
+  #form-container .form-control:focus {
+    box-shadow: none;
+  }
+  
+  /* mobile */
+  .navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #navbar-items {
+    justify-content: space-between;
+    
+  }
+  
+  #search-form,
+  #news-form {
+    width: 100%;
+    margin: 2em 0;
+  }
+  
+  .bi-search {
+    
+    color: rgb(255, 0, 0);
+  }
+  
+  .navbar-brand img {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  
+  /* borda e espaçamento */
+  #search-form,
+  #news-form {
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+  
+  #search-form input,
+  #news-form input {
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+  }
+  
+  /* tirando o focus azul */
+  #search-form input:focus,
+  #news-form input:focus {
+    box-shadow: none;
+  }
+  
+  #search-form input::placeholder,
+  #news-form input::placeholder {
+    color: #FFF;
+  }
+  
+  /* Segunda navbar */
+  #bottom-navbar-container .container {
+    justify-content: flex-end;
+  }
+  
+  #bottom-navbar-container a {
+    color: #FFF;
+    font-weight: 600;
+  }
+  
+  .navbar-toggler {
+    font-size: 1.5em;
+  }
+  
+  /* BANNERS */
+  #banners-container {
+    padding: 0;
+  }
+  
+  .carousel-caption {
+    bottom: 5em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.8em;
+  }
+
+  
+  /* MINI BANNERS */
+  #mini-banners {
+    margin-top: -3em;
+    z-index: 10;
+  }
+  
+  #mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  #mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    max-width: 50px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+  }
+  
+  #mini-banners .col-12 img {
+    height: 220px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  
+  #mini-banners .col-12 a {
+    font-weight: bold;
+    color: #FFF;
+    font-size: .8rem;
+    transition: .5s;
+  }
+  
+  #mini-banners .col-12 a:hover {
+    color: #101010;
+  }
+  
+  /* BEST SELLERS - Mais vendidos */
+  #best-sellers {
+    padding: 4em;
+  }
+  
+  #best-sellers .row {
+    margin: 0;
+  }
+  
+  #best-sellers .col-md-3 {
+    padding: 0;
+  }
+  
+  #best-sellers .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para elementos com a classe .title */
+  .title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .card {
+    text-align: center;
+    border-radius: 0;
+    min-height: 300px;
+  }
+  
+  .card img {
+    min-width: 140px;
+    margin: 2em auto;
+  }
+  
+  .card .card-category {
+    font-size: .8rem;
+  }
+  
+  .card .card-text {
+    margin: 2em;
+    font-weight: bold;
+  }
+  
+  /* Banner destaque */
+  #promo-banner-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  #promo-banner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #bottom-banner {
+    padding: 0;
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  
+  #bottom-banner .offer-subtitle, 
+  #bottom-banner h2 {
+    position: relative;
+    z-index: 10;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+    z-index: 10;
+    position: relative;
+  }
+  
+  
+  /* Estilos para a seção de PRODUTOS */
+  #products {
+    margin-bottom: 5rem;
+  }
+  
+  #products-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/flexfood/img/banners/banner3.jpeg');
+  }
+  
+  #products-banner h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  #products .col-md-4 {
+    padding: 0;
+  }
+  
+  #products .card img {
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+  }
+  
+  #produto-3 img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .produtos-mais-pedidos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .produto {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  .payment-approved {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    background-color: #891a1a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .payment-approved h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  
+  .payment-approved p {
+    font-size: 16px;
+  }
+  
+  align-self: flex-end;
+}
+
+.createprod-container input {
+  height: 40px;
+}
+
+.align-title-center {
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+
+
+
