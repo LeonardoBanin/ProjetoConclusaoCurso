@@ -83,7 +83,7 @@ $userData = $userController->verifyToken(false);
           <?php if ($_SESSION["email"] === "olerianoleonardo@gmail.com"): ?>
             <li class="nav-item">
               <a href="<?= $BASE_URL ?>addproducts.php" class="nav-link bold"><i class="bi bi-bag-plus"></i>
-                newprod
+                Add Product
               </a>
             </li>
           <?php endif; ?>
@@ -127,37 +127,37 @@ $userData = $userController->verifyToken(false);
     <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
       <li class="nav-item">
         <a class="nav-link" href="index.php">
-          Home
+         HOME
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php#best-sellers">
-          Mais vendidos
+          MAIS VENDIDOS
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php#bottom-banner">
-          Promoções
+          PROMOÇÕES
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index.php#products">
-          Produtos
+          PRODUTOS
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#gallery">
-          Contato
+          CONTATO
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./politica_privacidade.php">
-          Política de privacidade
+          POLITICA DE PRIVACIDADE
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="./sobre_nos.php">
-          Sobre Nós
+          SOBRE NOS
         </a>
       </li>
     </ul>

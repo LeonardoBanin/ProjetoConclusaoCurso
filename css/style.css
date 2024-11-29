@@ -89,6 +89,7 @@ body {
 #navbar a,
 #navbar button {
   color: #FFF;
+  
 }
 
 /* posição relativa para poder usar o 'span' */
@@ -96,8 +97,9 @@ body {
   position: relative;
 }
 
+
 #navbar i {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /* icone que mostra a quantidade */
@@ -105,8 +107,8 @@ body {
   position: absolute;
   top: -8px;
   right: -8px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #EF3636;
   text-align: center;
@@ -114,7 +116,7 @@ body {
 
 /* espaçmento para o 'span' não ficar em cima do preço */
 #cart-item span {
-  left: 20px;
+  left: 40px;
 }
 
 #form-container .form-control {
@@ -484,7 +486,7 @@ body {
 .payment-approved {
   border: 2px solid #ffffff; /* Cor azul principal */
   border-radius: 8px;
-  background-color: #891a1a; /* Fundo azul claro */
+  background-color: green; /* Fundo azul claro */
   color: #ffffff; /* Cor de texto azul escuro */
   padding: 20px;
 }
@@ -508,7 +510,7 @@ body {
 }
 
 .button-container .btn:hover {
-  background-color: #920c0c; /* Azul mais escuro para hover */
+  background-color: green; /* Azul mais escuro para hover */
 }
 
 
@@ -707,7 +709,7 @@ body {
 }
 
 .cart-card img {
-  max-height: 100px;
+  max-height: 400px;
 }
 
 .plus-minus button {

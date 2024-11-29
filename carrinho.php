@@ -164,7 +164,7 @@ if (!file_exists("carrinho_info/carrinho_" . $_SESSION["email"] . ".txt")) {
 
                                                 <input type='hidden' name='product_id' value="'<?= $row['id'] ?>'">
                                                 <input class="btn btn-primary" type='submit' value='Remover do carrinho'>
-                                                <button type="button" class="mt-3 btn btn-outline-danger" onclick="window.location.href='pagamento.php'">FINALIZAR COMPRA</button>
+                                                <button type="button" class="mt-3 btn btn-outline-light" onclick="window.location.href='pagamento-metodos.php'">FINALIZAR COMPRA</button>
 
 
                                             </div>
